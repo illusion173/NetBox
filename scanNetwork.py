@@ -94,10 +94,3 @@ def scanLocalDevices():
                     print(f"[{Fore.GREEN}+{Style.RESET_ALL}] {host}      \t {scanner[host]['vendor']}")
 scanLocalDevices()
 
-
-
-
-
-
-
-
