@@ -8,7 +8,5 @@ import subprocess
 print("Running WireScan Python Scripts ! \n")
 saveFile = input("What would you like the file to be saved as?\n") + ".pcap"
 duration = input("How many seconds would you like for the scan to be?\n")
-
-# warning this  is susceptible to shell injection.
 command = 'wireshark -i 2 -k -w '+ saveFile + ' -a duration:' + duration
 os.system(command)
