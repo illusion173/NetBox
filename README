@@ -1,0 +1,8 @@
+Welcome!
+
+Take a look within setup.sh & runMe.sh
+
+IF you have already ran setup.sh DO NOT run it again, msfdb init will break this
+do sudo apt-get update to upgrade packages.
+
+Once done running setup.sh, to run the program runMe.sh.

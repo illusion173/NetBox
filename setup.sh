@@ -1,5 +1,5 @@
 # Show available options
-
+echo "ONLY RUN ONCE! SEE README"
 echo "1. Debian-based (Debian, Ubuntu, Kali, ParrotOS, Pop!_OS, Linux Mint, Deepin, Elementary OS, Zorin OS, MX Linux, etc) "
 
     sudo apt-get update
@@ -7,6 +7,14 @@ echo "1. Debian-based (Debian, Ubuntu, Kali, ParrotOS, Pop!_OS, Linux Mint, Deep
     sudo apt-get install python3
     sudo apt-get install python3-pip
     sudo apt-get install xsltproc
+    cd /tmp
+    curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+    chmod +x msfinstall
+    sudo ./msfinstall
+    msfdb init
+    yes
+echo "ONLY RUN ONCE!"
+#installs and runs the msfdb needed
 echo "Installing python libraries & packages!"
 
 # Install all necessary pip packages
