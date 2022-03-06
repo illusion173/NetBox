@@ -30,4 +30,4 @@ sudo pip3 install python-whois
 sudo pip3 install paramiko
 sudo pip3 install netfilterqueue
 sudo pip3 install flask
-sudo pip install PyQt5
+sudo pip3 install PyQt5
