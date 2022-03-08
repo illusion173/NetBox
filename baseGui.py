@@ -3,7 +3,6 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import * 
 from PyQt5.QtWidgets import * 
 import sys
-import sys
 from scanComputer import *
 from scanNetworkVerbose import *
 from scanNetwork import *
@@ -52,7 +51,6 @@ class Ui_MainWindow(QtWidgets.QWidget):
         userIpAddressNetwork, done2 = QtWidgets.QInputDialog.getText(self, "Host Discovery", "Enter Network IP Address: ")
         print("Successful Input 2")
         scanLocalDevices(userIpAddressNetwork)
-
 
     def scanNetworkVerbose(self):
         userIpAddressNetworkVerbose, done3 = QtWidgets.QInputDialog.getText(self, "Network Verbose", "Enter Network IP Address: ")

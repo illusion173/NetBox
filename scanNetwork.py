@@ -5,10 +5,7 @@ import sys
 import os
 from os.path import exists
 from colorama import Fore, Back, Style
-import subprocess
 import json
-
-
 def saveFile(nm_json):
     if os.path.exists("NetworkScanoutput.json"):
         with open("NetworkScanoutput.json", "w", encoding="utf8") as outfile:

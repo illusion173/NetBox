@@ -1,11 +1,9 @@
-import socket
 from netaddr import *
 import nmap
 import sys
 import os
 from os.path import exists
 from colorama import Fore, Back, Style
-import subprocess
 import json
 
 '''
