@@ -26,7 +26,7 @@ def saveFile(nm_json):
         with open("NetworkScanoutput.json", "w", encoding="utf8") as outfile:
             json.dump(nm_json, outfile, ensure_ascii=False, indent = 4)
 
-def networkScanVerbose():
+def networkScanVerbose(userInput):
     try:
         scanData = scanner.scan(hosts = userInput, arguments = '-v -p 1-65535 -sV -O -sS -T4')
         Output = scanData['scan']
@@ -37,7 +37,7 @@ def networkScanVerbose():
         e = sys.exc_info()[1]
         print(f'[{Fore.RED}!{Style.RESET_ALL}] Error: {Fore.RED}{e}{Style.RESET_ALL}')
 
-networkScanVerbose()
+networkScanVerbose(userInput)
 
 
 print("Done scanning...\n")
