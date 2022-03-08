@@ -1,10 +1,10 @@
 import os
 
 #use http://scanme.nmap.org for testing purposes only!
-userInputtedIP = "http://scanme.nmap.org"
 
-def runComputerScan():
+def runComputerScan(userInputtedIP):
+    print("Running runComputerScan Function")
     oscommmand = ('nmap -A -O -oX' + userInputtedIP +'.xml ' + 'userInputtedIP')
     os.system(oscommmand)
-    osconvert = ('xsltproc' + ''  + userInputtedIP +'.xml ' + '-o' + '' + userInputtedIP + '.html')
+    osconvert = ('xsltproc' + ' '  + userInputtedIP +'.xml ' + '-o' + '' + userInputtedIP + '.html')
     os.system(osconvert)

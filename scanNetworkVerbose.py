@@ -11,10 +11,6 @@ import json
 '''
 https://highon.coffee/blog/nmap-cheat-sheet/
 '''
-
-print("Scan Network Verbose Script running...\n")
-
-userInput = 'scanme.nmap.org'
 scanner = nmap.PortScanner()
 
 def saveFile(nm_json):
@@ -27,6 +23,7 @@ def saveFile(nm_json):
             json.dump(nm_json, outfile, ensure_ascii=False, indent = 4)
 
 def networkScanVerbose(userInput):
+    print("Running networkScanVerbose Function")
     try:
         scanData = scanner.scan(hosts = userInput, arguments = '-v -p 1-65535 -sV -O -sS -T4')
         Output = scanData['scan']
@@ -36,8 +33,3 @@ def networkScanVerbose(userInput):
     except Exception as e: 
         e = sys.exc_info()[1]
         print(f'[{Fore.RED}!{Style.RESET_ALL}] Error: {Fore.RED}{e}{Style.RESET_ALL}')
-
-networkScanVerbose(userInput)
-
-
-print("Done scanning...\n")

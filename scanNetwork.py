@@ -8,7 +8,7 @@ from colorama import Fore, Back, Style
 import subprocess
 import json
 
-print("Scan Network Script\n")
+
 def saveFile(nm_json):
     if os.path.exists("NetworkScanoutput.json"):
         with open("NetworkScanoutput.json", "w", encoding="utf8") as outfile:
@@ -20,25 +20,8 @@ def saveFile(nm_json):
         
 scanner = nmap.PortScanner()
 
-print("****************************************************\n")
-print("Printing ifconfig for IP input")
-proc = subprocess.check_output("ifconfig").decode('utf-8')
-print (proc)
-print("****************************************************\n")
-print("Popular Subnet CIDR Notations:\n")
-print("255.255.255.255 = /32")
-print("255.255.255.254 = /31")
-print("255.255.255.0 = /24")
-print("255.255.254.0 = /23")
-print("255.255.0.0 = /16\n")
-print("****************************************************\n")
-
-def scanLocalDevices():
-
-    network = input('Please type the network you want to scan (Example: 192.168.1.0/24): ')
-
-    print(f'The network address is {network}')
-
+def scanLocalDevices(network):
+    print("Running scanLocalDevices Function")
     try:
         print(f'[{Fore.YELLOW}?{Style.RESET_ALL}] Scanning for devices on {Fore.YELLOW}{network}{Style.RESET_ALL} network...') 
         scanData = scanner.scan(hosts = network, arguments = '-v -sn -sP')
@@ -65,5 +48,4 @@ def scanLocalDevices():
                             print(f"[{Fore.GREEN}+{Style.RESET_ALL}] {host}      \t {scanner[host]['vendor']}") 
                 except:
                     print(f"[{Fore.GREEN}+{Style.RESET_ALL}] {host}      \t {scanner[host]['vendor']}")
-scanLocalDevices()
 
