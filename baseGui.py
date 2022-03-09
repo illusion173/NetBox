@@ -45,18 +45,20 @@ class Ui_MainWindow(QtWidgets.QWidget):
         userIpAddressSingleComputer, done1 = QtWidgets.QInputDialog.getText(self, "Single Verbose", "Enter an IP Address: ")
         print(userIpAddressSingleComputer)
         print("Successful Input 1")
-        runComputerScan(userIpAddressSingleComputer)
+        if(userIpAddressSingleComputer != ""):
+            runComputerScan(userIpAddressSingleComputer)
         
     def takeInputScanNetwork(self):
         userIpAddressNetwork, done2 = QtWidgets.QInputDialog.getText(self, "Host Discovery", "Enter Network IP Address: ")
         print("Successful Input 2")
-        scanLocalDevices(userIpAddressNetwork)
+        if (userIpAddressNetwork != ""):
+            scanLocalDevices(userIpAddressNetwork)
 
     def scanNetworkVerbose(self):
         userIpAddressNetworkVerbose, done3 = QtWidgets.QInputDialog.getText(self, "Network Verbose", "Enter Network IP Address: ")
         print("Successful Input 3")
-        networkScanVerbose(userIpAddressNetworkVerbose)
-
+        if(userIpAddressNetworkVerbose != ""):
+                networkScanVerbose(userIpAddressNetworkVerbose)
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
