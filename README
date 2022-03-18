@@ -1,8 +1,20 @@
 Welcome!
+Ensure to git clone inside home directory!
+Take a look within setup.sh
 
-Take a look within setup.sh & runMe.sh
+Once done running setup.sh, run the following commands:
 
-IF you have already ran setup.sh DO NOT run it again, msfdb init will break this
-do sudo apt-get update to upgrade packages.
+    msfconsole
 
-Once done running setup.sh, to run the program runMe.sh.
+    load msgrpc Pass=yourpassword
+    NOTE if first time just run
+    load msgrpc
+
+    NOTE: If using first time it will generate a username & password, take note of this.
+    exit out of the msfconsole using the command:
+
+    exit
+
+    New command:
+
+    sudo msfrpcd -P yourpassword -f -n -S -a 127.0.0.1

@@ -11,8 +11,7 @@ echo "1. Debian-based (Debian, Ubuntu, Kali, ParrotOS, Pop!_OS, Linux Mint, Deep
     curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
     chmod +x msfinstall
     sudo ./msfinstall
-    msfdb init
-    yes
+
 echo "ONLY RUN ONCE!"
 #installs and runs the msfdb needed
 echo "Installing python libraries & packages!"
@@ -39,3 +38,6 @@ sudo pip3 install paramiko
 sudo pip3 install netfilterqueue
 sudo pip3 install flask
 sudo pip3 install PyQt5
+sudo pip3 install beautifulsoup4
+sudo pip3 install lxml
+sudo pip3 install parse-nmap
