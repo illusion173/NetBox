@@ -1,7 +1,9 @@
-Welcome!
+#Welcome!
 Ensure to git clone inside home directory!
 Take a look within setup.sh
 
+
+#INSTALLTION
 Once done running setup.sh, run the following commands:
 
     msfconsole
