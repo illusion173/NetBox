@@ -20,3 +20,11 @@ Once done running setup.sh, run the following commands:
     New command:
 
     sudo msfrpcd -P yourpassword -f -n -S -a 127.0.0.1
+
+
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
