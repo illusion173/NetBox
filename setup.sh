@@ -41,3 +41,4 @@ sudo pip3 install PyQt5
 sudo pip3 install beautifulsoup4
 sudo pip3 install lxml
 sudo pip3 install parse-nmap
+sudo pip3 install python-nmap
