@@ -19,7 +19,7 @@ sudo python3 SetupGui.py
 
 After accepting all the needed software to be installed, the GUI will ask for a username and password.
 
-Please remember the username and password for this, if you lose the username and password all data gotten while using NetBox will be lost.
+Please remember the username and password. if you lose the username and password all data gotten while using NetBox will be lost.
 
 
 After running the above command, run this command to run the full application:
