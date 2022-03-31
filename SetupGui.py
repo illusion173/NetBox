@@ -24,7 +24,6 @@ class Window(QMainWindow):
         self.setWindowTitle(self.title)
         self.setGeometry(self.top, self.left, self.width, self.height)
         
-        
         ContinueBtn = QPushButton('Continue', self)
         ContinueBtn.move(100, 100)
         ContinueBtn.clicked.connect(self.setupBtn_onClick)
@@ -128,7 +127,6 @@ class SetupWindow(QDialog):
         self.setLayout(layoutV)
         self.show()
         
-        
     def goMainWindow(self):
         self.cams = Window()
         self.cams.show()
@@ -178,12 +176,12 @@ class SetupWindow(QDialog):
     def runMetaScript(self):
         print("Running MetaScript")
         #os.command('msfconsole')
-        #os.command('msgrpc')
+        #os.command('load msgrpc')
+        time.sleep(20)
         #os.command('sudo msfrpcd -P  -f -n -S -a 127.0.0.1')
                 
     def adminCreat(self):
         username = self.adminUsernameLabel.text()
-        
         if username == '':
             self.errorMessage()
             self.adminUsernameLabel.clear()
@@ -193,8 +191,6 @@ class SetupWindow(QDialog):
             self.passwordLabel.show()
             self.passwordBtn.show()
             
-
-        
     def passwordCreat(self):
         self.passwordLabel.setEchoMode(QLineEdit.EchoMode.Normal)
         password = self.passwordLabel.setText()
