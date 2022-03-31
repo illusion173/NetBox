@@ -1,4 +1,4 @@
-# Welcome to NetBox
+# Welcome to NetBox : The Networking Toolbox
 
 ## Developed by ERAU students: Jeremiah Webb, Haskell Cappers, Ryan Lucas & Adam Fitch
 
