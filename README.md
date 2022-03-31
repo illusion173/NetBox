@@ -1,21 +1,41 @@
-#Welcome!
+#Welcome to NetBox
 
-#Must have curl in order to download and install all needed components and modules.
-Take a look within setup.sh
+##Developed by ERAU students: Jeremiah Webb, Haskell Cappers, Ryan Lucas & Adam Fitch
 
-Once done running setup.sh, run the following commands:
+###Currrently only runs on Linux sytems with the apt package manager & local administrator on computer with sudo privileges.
 
-    msfconsole
+Run the following command to begin:
 
-    load msgrpc Pass=yourpassword
-    NOTE if first time just run
-    load msgrpc
+'''
 
-    NOTE: If using first time it will generate a username & password, take note of this.
-    exit out of the msfconsole using the command:
+git clone https://github.com/illusion173/SE300_Metasploits
 
-    exit
+'''
 
-    New command:
 
-    sudo msfrpcd -P yourpassword -f -n -S -a 127.0.0.1
+After cloning the repo to your desired directory, run the following commands:
+
+'''
+
+sudo python3 SetupGui.py
+
+'''
+
+After accepting all the needed software to be installed, the GUI will ask for a username and password.
+
+Please remember the username and password for this, if you lose the username and password all data gotten while using NetBox will be lost.
+
+
+After running the above command, run this command to run the full application:
+
+'''
+
+sudo python3 baseGui.py
+
+'''
+
+This will present a login screen, use the username and password you entered to access the application. 
+
+To add users to the program, other administrators or general users, you must be a administrator. 
+
+A general user is only allowed to run Nmap scans, and will not be able to view the data.
