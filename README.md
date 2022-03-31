@@ -12,7 +12,7 @@ git clone https://github.com/illusion173/SE300_Metasploits
 
 
 
-After cloning the repo to your desired directory, run the following command:
+After cloning the repo to your desired directory and navigating to the desired directory, run the following command:
 ```
 sudo python3 SetupGui.py
 ```
