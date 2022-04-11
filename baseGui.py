@@ -54,7 +54,7 @@ class Window(QWidget):
 
     @pyqtSlot()
     def importBtn_onClick(self):
-        #self.statusBar().showMessage('Importing a Pcap file')
+        # self.statusBar().showMessage('Importing a Pcap file')
         self.cams = ImportWindow(self.importLable.text())
         self.cams.show()
         self.close()
@@ -119,7 +119,7 @@ class ImportWindow(QDialog):
             if not self.inputFileName.endswith('.pcap'):
                 self.WrongFile()
                 self.filename.clear()
-                #print('that is not a valid pcap file. ')
+                # print('that is not a valid pcap file. ')
             else:
                 self.continueButton.show()
 #           need error checking to make sure the file that is clicked is a pcap file
@@ -269,6 +269,8 @@ class Dashboard(QMainWindow):
         helpContent.triggered.connect(self.helpDis)
         aboutContent = QAction("&About", self)
         aboutContent.triggered.connect(self.aboutDis)
+        statContent = QAction("&Statistics_Content", self)
+        statContent.triggered.connect(self.openStatWindow)
         helpMenu.addAction(helpContent)
         helpMenu.addAction(aboutContent)
         menuBar.addMenu(helpMenu)
@@ -296,7 +298,7 @@ class Dashboard(QMainWindow):
     def scanNetworkVerbose(self):
         userIpAddressNetworkVerbose, done3 = QtWidgets.QInputDialog.getText(
             self, "Network Verbose", "Enter Network IP Address: ")
-        #print("Successful Input 3")
+        # print("Successful Input 3")
         if(userIpAddressNetworkVerbose != ""):
             networkScanVerbose(userIpAddressNetworkVerbose)
 # MENU BAR FUNCTIONS NO TOUCH
@@ -321,9 +323,29 @@ class Dashboard(QMainWindow):
     def logoClick(self):
         webbrowser.open_new('https://github.com/illusion173/SE300_Metasploits')
 
+    def openStatWindow(self):
+        statWindow = statWindow()
+        statWindow.show()
+
+
+class statWindow(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.title = 'NetBox - Statistics'
+        self.setFixedSize(800, 800)
+        print("I am a stat page!")
+        # import Pcap button
+        importBtn = QPushButton('Import Json File', self)
+        importBtn.move(100, 100)
+        importBtn.clicked.connect(self.importBtn_onClick)
+        self.importLable = QLabel('Import Json file\nfor Statistics', self)
+        self.importLable.setGeometry(250, 100, 400, 30)
+
+
 class createSystem(QWidget):
     def __init__(self, LoginSystem):
         QWidget.__init__(self)
+
 
 class LoginSystem(QWidget):
     def __init__(self):
@@ -370,7 +392,7 @@ class LoginSystem(QWidget):
 
     # Show Password Function
     def showPass(self):
-        #print("Password has been shown")
+        # print("Password has been shown")
         self.placeHolderPassword.setEchoMode(QLineEdit.EchoMode.Normal)
 
     # Write Files For Demonstration Purposes
@@ -437,7 +459,7 @@ class LoginSystem(QWidget):
     # Display success when user logs in
     def normUser(self):
         if self.combobox.currentText() == "Regular":
-            #print("Normal Access")
+            # print("Normal Access")
             normInfo = []
             msg = QMessageBox()
             # Read File
