@@ -13,6 +13,10 @@ from scanNetwork import *
 from PyQt5.QtWidgets import QWidget, QLabel, QApplication, QHBoxLayout, QPushButton, QVBoxLayout
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtGui import QMovie
+import sys
+from PyQt5.QtWidgets import QMainWindow, QAction, qApp, QApplication
+from PyQt5.QtGui import QIcon
+
 import webbrowser
 class StatWindow(QWidget):
     def __init__(self):
@@ -40,8 +44,6 @@ class HelpWindow(QWidget):
          self.label.setMovie(movie)
          movie.start()
      
-
-
 class Window(QMainWindow):
 
      def __init__(self):
@@ -55,7 +57,7 @@ class Window(QMainWindow):
         self.buttonTitle.setStyleSheet("font-size: 14px; background-color: #01a4c3;border-style: solid; border-color: #000000; border-width: 3px; ")
         #window icon
         self.setWindowIcon(QtGui.QIcon("Logo.png"))
-        
+
 
        # Assemble Buttons
         self.pushButtonScanComputer = QPushButton("Scan Computer", self)
@@ -88,8 +90,6 @@ class Window(QMainWindow):
         menuBar.setStyleSheet("font-size: 14px; background-color: #01a4c3; border-style: solid; border-color: #000000; border-width: 3px;")
         helpMenu.setStyleSheet("font-size: 14px; background-color: #01a4c3")
         statMenu.setStyleSheet("font-size: 14px; background-color: #01a4c3")
-        
-       
         
         #Logo addition
         self.logoLabel = QPushButton("" ,self)
