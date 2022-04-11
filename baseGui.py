@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import webbrowser
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
@@ -7,10 +8,7 @@ from PyQt5.QtGui import *
 from scanComputer import *
 from scanNetworkVerbose import *
 from scanNetwork import *
-from PyQt5.QtWidgets import QWidget, QLabel, QApplication, QHBoxLayout, QPushButton, QVBoxLayout
-from PyQt5 import QtWidgets as qtw
-from PyQt5.QtWidgets import (
-    QApplication, QWidget, QPushButton, QLabel, QLineEdit, QGridLayout, QMessageBox)
+from PyQt5.QtWidgets import QStatusBar, QFileDialog, QComboBox, QStyle, QDialog, QMainWindow, QAction, QApplication, QWidget, QPushButton, QLabel, QLineEdit, QGridLayout, QMessageBox, QWidget, QLabel, QApplication, QHBoxLayout, QPushButton, QVBoxLayout, QMenu
 import csv
 import os
 from PyQt5.uic import loadUi
@@ -18,8 +16,9 @@ from fileinput import filename
 from exploitTest import *
 fileCreate = ""
 checkedLogin = 0
- 
-class Window(QMainWindow):
+
+
+class Window(QWidget):
     def __init__(self):
         super().__init__()
         self.title = 'NetBox - WireShark'
@@ -52,27 +51,28 @@ class Window(QMainWindow):
         convertBtn.clicked.connect(self.convertBtn_onClick)
         self.convertLabel = QLabel('Convert .pcap file to HTML')
         self.convertLable = (250, 300, 400, 30)
-        
+
     @pyqtSlot()
     def importBtn_onClick(self):
-        self.statusBar().showMessage('Importing a Pcap file')
+        #self.statusBar().showMessage('Importing a Pcap file')
         self.cams = ImportWindow(self.importLable.text())
         self.cams.show()
         self.close()
 
     @pyqtSlot()
     def createBtn_onClick(self):
-        self.statusBar().showMessage('Create New Pcap file')
+       # self.statusBar().showMessage('Create New Pcap file')
         self.cams = createWindow(self.createLineEdit.text())
         self.cams.show()
         self.close()
 
     @pyqtSlot()
     def convertBtn_onClick(self):
-        self.statusBar().showMessage('Converting pcap file to html')
+       # self.statusBar().showMessage('Converting pcap file to html')
         self.cams = ImportWindow(self.importLable.text())
         self.cams.show()
         self.close()
+
 
 class ImportWindow(QDialog):
     def __init__(self, value, parent=None):
@@ -137,6 +137,7 @@ class ImportWindow(QDialog):
         wrongFile.setStandardButtons(QMessageBox.Ok)
         wrongFile.exec_()
 
+
 class createWindow(QDialog):
     def __init__(self, value, parent=None):
         super().__init__(parent)
@@ -198,6 +199,7 @@ class createWindow(QDialog):
         command = 'wireshark -i 2 -k -w ' + fileCreate + ' -a duration:' + duration
         os.system(command)
 
+
 class HelpWindow(QWidget):
     def __init__(self):
         super(HelpWindow, self).__init__()
@@ -209,44 +211,73 @@ class HelpWindow(QWidget):
         self.label.setText('Sub Window')
         self.label.setStyleSheet('font-size:40px')
 
-class Dashboard(QWidget):
+
+class Dashboard(QMainWindow):
     def __init__(self):
         super(Dashboard, self).__init__()
         # set the title
         self.setWindowTitle("NetBox")
-
+        self.setStyleSheet(
+            "background-color: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5, stop: .5 #1168a6, stop: 1 #1174a6);")
         self.setFixedSize(1600, 900)
         self.buttonTitle = QLabel("Scans Available", self)
-        self.buttonTitle.move(1400, 30)
-        self.buttonTitle.setStyleSheet("font-size: 14px;")
-
+        self.buttonTitle.move(1400, 25)
+        self.buttonTitle.setStyleSheet("font-size: 20px; color: 1174a6")
+        self.buttonTitle.setGeometry(1400, 50, 150, 50)
+        self.setWindowIcon(QtGui.QIcon("Logo.png"))
        # Assemble Buttons
         self.pushButtonScanComputer = QPushButton("Scan Computer", self)
-        self.pushButtonScanComputer.setGeometry(1400, 50, 150, 50)
-        self.pushButtonScanNetwork = QPushButton("Scan Network", self)
-        self.pushButtonScanNetwork.setGeometry(1400, 100, 150, 50)
+        self.pushButtonScanComputer.setGeometry(1400, 100, 150, 50)
+        self.pushButtonScanNetwork = QPushButton("Host Discovery", self)
+        self.pushButtonScanNetwork.setGeometry(1400, 150, 150, 50)
         self.pushButtonScanNetworkVerbose = QPushButton(
             "Scan Network Verbose", self)
-        self.pushButtonScanNetworkVerbose.setGeometry(1400, 150, 150, 50)
+        self.pushButtonScanNetworkVerbose.setGeometry(1400, 200, 150, 50)
 
         self.pushButtonHelp = QPushButton("Exploit Computer", self)
-        self.pushButtonHelp.setGeometry(1400, 200, 150, 50)
+        self.pushButtonHelp.setGeometry(1400, 250, 150, 50)
 
-        self.pushButtonWireScan = QPushButton("Wire Scan", self)
-        self.pushButtonWireScan.setGeometry(1400, 250, 150, 50)
-        
+        self.pushButtonWireScan = QPushButton("WireShark Scan", self)
+        self.pushButtonWireScan.setGeometry(1400, 300, 150, 50)
+
         # Assign Functions to buttons
         self.pushButtonScanComputer.clicked.connect(self.takeInputScanComputer)
         self.pushButtonScanNetwork.clicked.connect(self.takeInputScanNetwork)
         self.pushButtonScanNetworkVerbose.clicked.connect(
             self.scanNetworkVerbose)
-        
+
         self.wiresharkWindow = Window()
         self.exploitWindow = ExploitComputerWindow()
         self.pushButtonWireScan.clicked.connect(self.wiresharkWindow.show)
-        
+
         self.pushButtonHelp.clicked.connect(self.exploitWindow.show)
-        
+
+        # Logo addition
+        self.logoLabel = QPushButton("", self)
+        self.logoLabel.setStyleSheet(
+            "background-image : url(Logo_15.png); border-style: solid; border-color: #000000; border-width: 3px;")
+        self.logoLabel.setGeometry(0, 30, 180, 180)
+        self.logoLabel.clicked.connect(self.logoClick)
+
+        menuBar = self.menuBar()
+        helpMenu = QMenu("&Help", self)
+        statMenu = QMenu("&Statistics", self)
+        statOpen = QAction("Open", self)
+        statMenu.addAction(statOpen)
+        # statOpen.triggered(self.sub_window.show)
+        helpContent = QAction("&Help_Content", self)
+        helpContent.triggered.connect(self.helpDis)
+        aboutContent = QAction("&About", self)
+        aboutContent.triggered.connect(self.aboutDis)
+        helpMenu.addAction(helpContent)
+        helpMenu.addAction(aboutContent)
+        menuBar.addMenu(helpMenu)
+        menuBar.addMenu(statMenu)
+        menuBar.setStyleSheet(
+            "font-size: 14px; background-color: #01a4c3; border-style: solid; border-color: #000000; border-width: 3px;")
+        helpMenu.setStyleSheet("font-size: 14px; background-color: #01a4c3")
+        statMenu.setStyleSheet("font-size: 14px; background-color: #01a4c3")
+
     def takeInputScanComputer(self):
         userIpAddressSingleComputer, done1 = QtWidgets.QInputDialog.getText(
             self, "Single Verbose", "Enter an IP Address: ")
@@ -268,6 +299,27 @@ class Dashboard(QWidget):
         #print("Successful Input 3")
         if(userIpAddressNetworkVerbose != ""):
             networkScanVerbose(userIpAddressNetworkVerbose)
+# MENU BAR FUNCTIONS NO TOUCH
+
+    def helpDis(self):
+        helpF = open("netBoxHelp.txt", "r")
+        helpBox = QMessageBox()
+        helpBox.setWindowIcon(QtGui.QIcon("Logo.png"))
+        helpBox.setStyleSheet(
+            "color:white;background:#01a4c3;font-size: 20px;")
+        helpBox.about(helpBox, "Help", helpF.read())
+        helpF.close()
+
+    def aboutDis(self):
+        aboutF = open("netBox_About.txt", "r")
+        aboutBox = QMessageBox()
+        aboutBox.setStyleSheet(
+            "color:white;background:#01a4c3;font-size: 20px;")
+        aboutBox.setWindowIcon(QtGui.QIcon("Logo.png"))
+        aboutBox.about(aboutBox, "About netBox", aboutF.read())
+
+    def logoClick(self):
+        webbrowser.open_new('https://github.com/illusion173/SE300_Metasploits')
 
 class createSystem(QWidget):
     def __init__(self, LoginSystem):
@@ -415,6 +467,7 @@ class LoginSystem(QWidget):
                     msg.setText("Username/Password does not exist")
                     msg.exec_()
                     self.placeHolderPassword.clear()
+
 
 if __name__ == "__main__":
     # create pyqt5 app
