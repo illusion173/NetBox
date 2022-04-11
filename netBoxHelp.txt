@@ -1,0 +1,10 @@
+Help Content:
+
+nmap assistance at:
+ https://nmap.org/book/man.html
+
+wireShark assitance at:
+ https://www.wireshark.org/ under get help tab
+ 
+metasploit assitance at:
+ https://www.metasploit.com/help

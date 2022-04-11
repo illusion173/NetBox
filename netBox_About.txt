@@ -1,0 +1,8 @@
+netBox is a networking and cybersecurity tool for use by both System Admins and IT specialists within organizations.
+Tools utilized: nMap, Metaspliot, wireShark
+
+Authors: 
+Jeremiah Webb
+Haskell Cappers
+Adam Fitch
+Ryan Lucas
