@@ -6,20 +6,20 @@ import os
 from os.path import exists
 from colorama import Fore, Back, Style
 import json
+
 def saveFile(nm_json):
-    if os.path.exists("NetworkScanoutput.json"):
-        with open("NetworkScanoutput.json", "w", encoding="utf8") as outfile:
+    if os.path.exists("HostDiscovery.json"):
+        with open("HostDiscovery.json", "w", encoding="utf8") as outfile:
             json.dump(nm_json, outfile, ensure_ascii=False, indent = 4)
-    if not os.path.exists("NetworkScanoutput.csv"):
-        file = open("NetworkScanoutput.json", "x")
-        with open("NetworkScanoutput.json", "w", encoding="utf8") as outfile:
+    if not os.path.exists("HostDiscovery.csv"):
+        file = open("HostDiscovery.json", "x")
+        with open("HostDiscovery.json", "w", encoding="utf8") as outfile:
             json.dump(nm_json, outfile, ensure_ascii=False, indent = 4)
-        
-scanner = nmap.PortScanner()
 
 def scanLocalDevices(network):
     print("Running scanLocalDevices Function")
     try:
+        scanner = nmap.PortScanner()
         print(f'[{Fore.YELLOW}?{Style.RESET_ALL}] Scanning for devices on {Fore.YELLOW}{network}{Style.RESET_ALL} network...') 
         scanData = scanner.scan(hosts = network, arguments = '-v -sn -sP')
         Output = scanData['scan']
@@ -45,4 +45,4 @@ def scanLocalDevices(network):
                             print(f"[{Fore.GREEN}+{Style.RESET_ALL}] {host}      \t {scanner[host]['vendor']}") 
                 except:
                     print(f"[{Fore.GREEN}+{Style.RESET_ALL}] {host}      \t {scanner[host]['vendor']}")
-
+                    

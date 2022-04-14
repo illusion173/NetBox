@@ -9,23 +9,23 @@ import json
 '''
 https://highon.coffee/blog/nmap-cheat-sheet/
 '''
-scanner = nmap.PortScanner()
 
-def saveFile(nm_json):
-    if os.path.exists("NetworkScanoutput.json"):
-        with open("NetworkScanoutput.json", "w", encoding="utf8") as outfile:
+def saveFile(nm_json, userInput):
+    if os.path.exists("NetworkVerbose.json"):
+        with open("NetworkVerbose.json", "w", encoding="utf8") as outfile:
             json.dump(nm_json, outfile, ensure_ascii=False, indent = 4)
-    if not os.path.exists("NetworkScanoutput.csv"):
-        file = open("NetworkScanoutput.json", "x")
-        with open("NetworkScanoutput.json", "w", encoding="utf8") as outfile:
+    if not os.path.exists("NetworkVerbose.csv"):
+        file = open("NetworkVerbose.json", "x")
+        with open("NetworkVerbose.json", "w", encoding="utf8") as outfile:
             json.dump(nm_json, outfile, ensure_ascii=False, indent = 4)
 
 def networkScanVerbose(userInput):
     print("Running networkScanVerbose Function")
     try:
+        scanner = nmap.PortScanner()
         scanData = scanner.scan(hosts = userInput, arguments = '-v -p 1-65535 -sV -O -sS -T4')
         Output = scanData['scan']
-        saveFile(Output)
+        saveFile(Output, userInput)
     except KeyboardInterrupt:
         sys.exit('\n^C\n')
     except Exception as e: 

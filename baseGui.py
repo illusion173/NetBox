@@ -17,7 +17,6 @@ from exploitTest import *
 fileCreate = ""
 checkedLogin = 0
 
-
 class Window(QWidget):
     def __init__(self):
         super().__init__()
@@ -326,7 +325,6 @@ class Dashboard(QMainWindow):
     def openStatWindow(self):
         statWindow = statWindow()
         statWindow.show()
-
 
 class statWindow(QWidget):
     def __init__(self):
