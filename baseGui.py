@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import webbrowser
 import sys
-from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtGui import *
@@ -9,11 +8,13 @@ from scanComputer import *
 from scanNetworkVerbose import *
 from scanNetwork import *
 from PyQt5.QtWidgets import QStatusBar, QFileDialog, QComboBox, QStyle, QDialog, QMainWindow, QAction, QApplication, QWidget, QPushButton, QLabel, QLineEdit, QGridLayout, QMessageBox, QWidget, QLabel, QApplication, QHBoxLayout, QPushButton, QVBoxLayout, QMenu
+from PyQt5.QtGui import QPixmap
 import csv
 import os
 from PyQt5.uic import loadUi
 from fileinput import filename
 from exploitTest import *
+from statScript import *
 fileCreate = ""
 checkedLogin = 0
 
@@ -71,7 +72,6 @@ class Window(QWidget):
         self.cams = ImportWindow(self.importLable.text())
         self.cams.show()
         self.close()
-
 
 class ImportWindow(QDialog):
     def __init__(self, value, parent=None):
@@ -136,7 +136,6 @@ class ImportWindow(QDialog):
         wrongFile.setStandardButtons(QMessageBox.Ok)
         wrongFile.exec_()
 
-
 class createWindow(QDialog):
     def __init__(self, value, parent=None):
         super().__init__(parent)
@@ -198,18 +197,93 @@ class createWindow(QDialog):
         command = 'wireshark -i 2 -k -w ' + fileCreate + ' -a duration:' + duration
         os.system(command)
 
+class statWindow(QWidget):
+    def __init__(self, parent=None):
+        super(statWindow, self).__init__(parent)
 
-class HelpWindow(QWidget):
-    def __init__(self):
-        super(HelpWindow, self).__init__()
-        self.resize(400, 300)
+        self.setFixedSize(1600, 900)
+        self.setWindowTitle("NetBox - StatPage")
+        # import Pcap button
+        importBtn = QPushButton('Import', self)
+        importBtn.move(100, 100)
+        importBtn.clicked.connect(self.importBtn_onClickJson)
+        self.importLable = QLabel('Import a Json file', self)
+        self.importLable.setGeometry(250, 100, 400, 30)
+        
+        self.picturesBtn = QPushButton('Show Graphs', self)
+        self.picturesBtn.move(100,200)
+        self.picturesBtn.clicked.connect(self.showGraphs)
+        self.picturesBtn.setHidden(True)
+        
+        self.labelbar = QLabel(self)
+        self.pixmap = QPixmap('bar.png')
+        self.labelbar.setPixmap(self.pixmap)
+        
+        self.labelpi = QLabel(self)
+        self.pixmap2 = QPixmap('pichart.png')
+        self.labelpi.setPixmap(self.pixmap2)
+        self.labelpi.move(100,200)
+        
+    @pyqtSlot()
+    def importBtn_onClickJson(self):
+        self.cams = ImportJsonWindow(self.importLable.text())
+        self.cams.show()
+        self.picturesBtn.setHidden(False)
+    
+    def showGraphs(self):
+        print("Hello, world!")     
 
-        # Label
-        self.label = QLabel(self)
-        self.label.setGeometry(0, 0, 400, 300)
-        self.label.setText('Sub Window')
-        self.label.setStyleSheet('font-size:40px')
+class ImportJsonWindow(QDialog):
+    def __init__(self, value, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle('Importing')
+        self.setWindowIcon(self.style().standardIcon(
+            QStyle.SP_FileDialogInfoView))
+        self.filename = QLineEdit()
+        self.searchButton = QPushButton('Search', self)
+        self.searchButton.setIconSize(QSize(200, 200))
+        self.searchButton.clicked.connect(self.browseFile)
+        layoutV = QVBoxLayout()
+        self.pushButton = QPushButton(self)
+        self.pushButton.setStyleSheet(
+            'background-color: rgb(0,0,255); color: #fff')
+        self.pushButton.setText('Go Back!')
+        self.pushButton.clicked.connect(self.jsonWindow)
+        layoutV.addWidget(self.pushButton)
+        layoutH = QHBoxLayout()
+        #layoutH.addWidget(self.continueButton)
+        layoutV.addLayout(layoutH)
+        layoutH.addWidget(self.filename)
+        layoutH.addWidget(self.searchButton)
+        #self.continueButton.hide()
+        self.setLayout(layoutV)
+        
+    def jsonWindow(self):
+        self.cams = statWindow()
+        self.cams.show()
+        self.close()
+        
+    def browseFile(self):
+        fname = QFileDialog.getOpenFileName(self, 'open file', '/home')
+        self.filename.setText(fname[0])
+        if fname:
+            self.inputFileName = fname[0]
+            if not self.inputFileName.endswith('.json'):
+                self.WrongFile()
+                self.filename.clear()
+                # print('that is not a valid pcap file. ')
+            else:
+                print(self.inputFileName)
+                mainstatScript(self.inputFileName)
 
+    def WrongFile(self):
+        wrongFile = QMessageBox()
+        wrongFile.setIcon(QMessageBox.Critical)
+        wrongFile.setWindowTitle('ERROR')
+        wrongFile.setText(
+            'That is not a .json file. Pleas select the correct file type')
+        wrongFile.setStandardButtons(QMessageBox.Ok)
+        wrongFile.exec_()
 
 class Dashboard(QMainWindow):
     def __init__(self):
@@ -261,15 +335,14 @@ class Dashboard(QMainWindow):
         menuBar = self.menuBar()
         helpMenu = QMenu("&Help", self)
         statMenu = QMenu("&Statistics", self)
-        statOpen = QAction("Open", self)
-        statMenu.addAction(statOpen)
         # statOpen.triggered(self.sub_window.show)
         helpContent = QAction("&Help_Content", self)
         helpContent.triggered.connect(self.helpDis)
         aboutContent = QAction("&About", self)
         aboutContent.triggered.connect(self.aboutDis)
-        statContent = QAction("&Statistics_Content", self)
+        statContent = QAction("&Statistics Page", self)
         statContent.triggered.connect(self.openStatWindow)
+        statMenu.addAction(statContent)
         helpMenu.addAction(helpContent)
         helpMenu.addAction(aboutContent)
         menuBar.addMenu(helpMenu)
@@ -322,28 +395,15 @@ class Dashboard(QMainWindow):
     def logoClick(self):
         webbrowser.open_new('https://github.com/illusion173/SE300_Metasploits')
 
+    @QtCore.pyqtSlot()
     def openStatWindow(self):
-        statWindow = statWindow()
-        statWindow.show()
-
-class statWindow(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.title = 'NetBox - Statistics'
-        self.setFixedSize(800, 800)
-        print("I am a stat page!")
-        # import Pcap button
-        importBtn = QPushButton('Import Json File', self)
-        importBtn.move(100, 100)
-        importBtn.clicked.connect(self.importBtn_onClick)
-        self.importLable = QLabel('Import Json file\nfor Statistics', self)
-        self.importLable.setGeometry(250, 100, 400, 30)
-
+        self.newStatWin = statWindow()
+        # newStatWin.resize(640,480)
+        self.newStatWin.show()
 
 class createSystem(QWidget):
     def __init__(self, LoginSystem):
         QWidget.__init__(self)
-
 
 class LoginSystem(QWidget):
     def __init__(self):
@@ -487,7 +547,6 @@ class LoginSystem(QWidget):
                     msg.setText("Username/Password does not exist")
                     msg.exec_()
                     self.placeHolderPassword.clear()
-
 
 if __name__ == "__main__":
     # create pyqt5 app

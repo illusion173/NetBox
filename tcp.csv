@@ -1,0 +1,3267 @@
+protocol,port,description
+tcp,0,reserved
+tcp,1,port service multiplexer
+tcp,2,management utility
+tcp,3,compression process
+tcp,4,unassigned
+tcp,5,remote job entry
+tcp,6,unassigned
+tcp,7,echo
+tcp,8,unassigned
+tcp,9,discard
+tcp,10,unassigned
+tcp,11,active users
+tcp,12,unassigned
+tcp,13,daytime (rfc 867)
+tcp,14,unassigned
+tcp,15,unassigned [was netstat]
+tcp,16,unassigned
+tcp,17,quote of the day
+tcp,18,message send protocol
+tcp,19,character generator
+tcp,20,file transfer [default data]
+tcp,21,file transfer [control]
+tcp,22,ssh remote login protocol
+tcp,23,telnet
+tcp,24,any private mail system
+tcp,25,simple mail transfer
+tcp,26,unassigned
+tcp,27,nsw user system fe
+tcp,28,unassigned
+tcp,29,msg icp
+tcp,30,unassigned
+tcp,31,msg authentication
+tcp,32,unassigned
+tcp,33,display support protocol
+tcp,34,unassigned
+tcp,35,any private printer server
+tcp,36,unassigned
+tcp,37,time / w32.sober.i virus
+tcp,38,route access protocol
+tcp,39,resource location protocol
+tcp,40,unassigned
+tcp,41,graphics
+tcp,42,host name server
+tcp,43,whois
+tcp,44,mpm flags protocol
+tcp,45,message processing module [recv]
+tcp,46,mpm [default send]
+tcp,47,ni ftp
+tcp,48,digital audit daemon
+tcp,49,login host protocol (tacacs)
+tcp,50,remote mail checking protocol
+tcp,51,imp logical address maintenance
+tcp,52,xns time protocol
+tcp,53,domain name server
+tcp,54,xns clearinghouse
+tcp,55,isi graphics language
+tcp,56,xns authentication
+tcp,57,any private terminal access
+tcp,58,xns mail
+tcp,59,any private file service
+tcp,60,unassigned
+tcp,61,ni mail
+tcp,62,aca services
+tcp,63,whois++
+tcp,64,communications integrator (ci)
+tcp,65,tacacs-database service
+tcp,66,oracle sql*net
+tcp,67,bootstrap protocol server
+tcp,68,bootstrap protocol client
+tcp,69,trivial file transfer
+tcp,70,gopher
+tcp,71,remote job service
+tcp,72,remote job service
+tcp,73,remote job service
+tcp,74,remote job service
+tcp,75,any private dial out service
+tcp,76,distributed external object store
+tcp,77,any private rje service
+tcp,78,vettcp
+tcp,79,finger
+tcp,80,world wide web http
+tcp,81,hosts2 name server / bagle-az worm / win32.rbot worm
+tcp,82,xfer utility
+tcp,83,mit ml device
+tcp,84,common trace facility
+tcp,85,mit ml device
+tcp,86,micro focus cobol
+tcp,87,any private terminal link
+tcp,88,kerberos
+tcp,89,su/mit telnet gateway
+tcp,90,dnsix securit attribute token map
+tcp,91,mit dover spooler
+tcp,92,network printing protocol
+tcp,93,device control protocol
+tcp,94,tivoli object dispatcher
+tcp,95,supdup
+tcp,96,dixie protocol specification
+tcp,97,swift remote virtural file protocol
+tcp,98,linuxconf / tac news
+tcp,99,metagram relay
+tcp,100,[unauthorized use]
+tcp,101,nic host name server
+tcp,102,msexchangemta x.400 / iso-tsap class 0
+tcp,103,genesis point-to-point trans net
+tcp,104,acr-nema digital imag. & comm. 300
+tcp,105,mailbox name nameserver
+tcp,106,3com-tsmux
+tcp,107,remote telnet service
+tcp,108,sna gateway access server
+tcp,109,post office protocol - version 2
+tcp,110,post office protocol - version 3
+tcp,111,sun remote procedure call
+tcp,112,mcidas data transmission protocol
+tcp,113,authentication service
+tcp,114,audio news multicast
+tcp,115,simple file transfer protocol
+tcp,116,ansa rex notify
+tcp,117,uucp path service
+tcp,118,sql services
+tcp,119,network news transfer protocol
+tcp,120,cfdptkt
+tcp,121,encore expedited remote pro.call
+tcp,122,smakynet
+tcp,123,network time protocol
+tcp,124,ansa rex trader
+tcp,125,locus pc-interface net map ser
+tcp,126,unisys unitary login
+tcp,127,locus pc-interface conn server
+tcp,128,gss x license verification
+tcp,129,password generator protocol
+tcp,130,cisco fnative
+tcp,131,cisco tnative
+tcp,132,cisco sysmaint
+tcp,133,statistics service
+tcp,134,ingres-net service
+tcp,135,dce endpoint resolution
+tcp,136,profile naming system
+tcp,137,netbios name service
+tcp,138,netbios datagram service
+tcp,139,netbios session service
+tcp,140,emfis data service
+tcp,141,emfis control service
+tcp,142,britton-lee idm
+tcp,143,internet message access protocol
+tcp,144,universal management architecture
+tcp,145,uaac protocol
+tcp,146,iso-ip0
+tcp,147,iso-ip
+tcp,148,jargon
+tcp,149,aed 512 emulation service
+tcp,150,sql-net
+tcp,151,hems
+tcp,152,background file transfer program
+tcp,153,sgmp
+tcp,154,netsc
+tcp,155,netsc
+tcp,156,sql service
+tcp,157,knet/vm command/message protocol
+tcp,158,pcmail server
+tcp,159,nss-routing
+tcp,160,sgmp-traps
+tcp,161,snmp
+tcp,162,snmptrap
+tcp,163,cmip/tcp manager
+tcp,164,cmip/tcp agent
+tcp,165,xerox
+tcp,166,sirius systems
+tcp,167,namp
+tcp,168,rsvd
+tcp,169,send
+tcp,170,network postscript
+tcp,171,network innovations multiplex
+tcp,172,network innovations cl/1
+tcp,173,xyplex
+tcp,174,mailq
+tcp,175,vmnet
+tcp,176,genrad-mux
+tcp,177,x display manager control protocol
+tcp,178,nextstep window server
+tcp,179,border gateway protocol
+tcp,180,intergraph
+tcp,181,unify
+tcp,182,unisys audit sitp
+tcp,183,ocbinder
+tcp,184,ocserver
+tcp,185,remote-kis
+tcp,186,kis protocol
+tcp,187,application communication interface
+tcp,188,plus five's mumps
+tcp,189,queued file transport
+tcp,190,gateway access control protocol
+tcp,191,prospero directory service
+tcp,192,osu network monitoring system
+tcp,193,spider remote monitoring protocol
+tcp,194,internet relay chat protocol
+tcp,195,dnsix network level module audit
+tcp,196,dnsix session mgt module audit redir
+tcp,197,directory location service
+tcp,198,directory location service monitor
+tcp,199,smux
+tcp,200,ibm system resource controller
+tcp,201,appletalk routing maintenance
+tcp,202,appletalk name binding
+tcp,203,appletalk unused
+tcp,204,appletalk echo
+tcp,205,appletalk unused
+tcp,206,appletalk zone information
+tcp,207,appletalk unused
+tcp,208,appletalk unused
+tcp,209,the quick mail transfer protocol
+tcp,210,ansi z39.50
+tcp,211,texas instruments 914c/g terminal
+tcp,212,atexsstr
+tcp,213,ipx
+tcp,214,vm pwscs
+tcp,215,insignia solutions
+tcp,216,computer associates int'l license server
+tcp,217,dbase unix
+tcp,218,netix message posting protocol
+tcp,219,unisys arps
+tcp,220,interactive mail access protocol v3
+tcp,221,berkeley rlogind with spx auth
+tcp,222,berkeley rshd with spx auth
+tcp,223,certificate distribution center
+tcp,224,masqdialer
+tcp,242,direct
+tcp,243,survey measurement
+tcp,244,inbusiness
+tcp,245,link
+tcp,246,display systems protocol
+tcp,247,subntbcst_tftp
+tcp,248,bhfhs
+tcp,256,rap/checkpoint snmp
+tcp,257,check point / secure electronic transaction
+tcp,258,check point / yak winsock personal chat
+tcp,259,check point firewall-1 telnet auth / efficient short remote operations
+tcp,260,openport
+tcp,261,iiop name service over tls/ssl
+tcp,262,arcisdms
+tcp,263,hdap
+tcp,264,bgmp / check point
+tcp,265,x-bone ctl
+tcp,266,scsi on st
+tcp,267,tobit david service layer
+tcp,268,tobit david replica
+tcp,280,http-mgmt
+tcp,281,personal link
+tcp,282,cable port a/x
+tcp,283,rescap
+tcp,284,corerjd
+tcp,286,fxp-1
+tcp,287,k-block
+tcp,308,novastor backup
+tcp,309,entrusttime
+tcp,310,bhmds
+tcp,311,appleshare ip webadmin
+tcp,312,vslmp
+tcp,313,magenta logic
+tcp,314,opalis robot
+tcp,315,dpsi
+tcp,316,decauth
+tcp,317,zannet
+tcp,318,pkix timestamp
+tcp,319,ptp event
+tcp,320,ptp general
+tcp,321,pip
+tcp,322,rtsps
+tcp,333,texar security port
+tcp,344,prospero data access protocol
+tcp,345,perf analysis workbench
+tcp,346,zebra server
+tcp,347,fatmen server
+tcp,348,cabletron management protocol
+tcp,349,mftp
+tcp,350,matip type a
+tcp,351,bhoetty (added 5/21/97)
+tcp,352,bhoedap4 (added 5/21/97)
+tcp,353,ndsauth
+tcp,354,bh611
+tcp,355,datex-asn
+tcp,356,cloanto net 1
+tcp,357,bhevent
+tcp,358,shrinkwrap
+tcp,359,tenebris network trace service
+tcp,360,scoi2odialog
+tcp,361,semantix
+tcp,362,srs send
+tcp,363,rsvp tunnel
+tcp,364,aurora cmgr
+tcp,365,dtk
+tcp,366,odmr
+tcp,367,mortgageware
+tcp,368,qbikgdp
+tcp,369,rpc2portmap
+tcp,370,codaauth2
+tcp,371,clearcase
+tcp,372,listprocessor
+tcp,373,legent corporation
+tcp,374,legent corporation
+tcp,375,hassle
+tcp,376,amiga envoy network inquiry proto
+tcp,377,nec corporation
+tcp,378,nec corporation
+tcp,379,tia/eia/is-99 modem client
+tcp,380,tia/eia/is-99 modem server
+tcp,381,hp performance data collector
+tcp,382,hp performance data managed node
+tcp,383,hp performance data alarm manager
+tcp,384,a remote network server system
+tcp,385,ibm application
+tcp,386,asa message router object def.
+tcp,387,appletalk update-based routing pro.
+tcp,388,unidata ldm
+tcp,389,lightweight directory access protocol / internet locator service (ils)
+tcp,390,uis
+tcp,391,synoptics snmp relay port
+tcp,392,synoptics port broker port
+tcp,393,data interpretation system
+tcp,394,embl nucleic data transfer
+tcp,395,netscout control protocol
+tcp,396,novell netware over ip
+tcp,397,multi protocol trans. net.
+tcp,398,kryptolan
+tcp,399,iso transport class 2 non-control over tcp
+tcp,400,workstation solutions
+tcp,401,uninterruptible power supply
+tcp,402,genie protocol
+tcp,403,decap
+tcp,404,nced
+tcp,405,ncld
+tcp,406,interactive mail support protocol
+tcp,407,timbuktu
+tcp,408,prospero resource manager sys. man.
+tcp,409,prospero resource manager node man.
+tcp,410,decladebug remote debug protocol
+tcp,411,remote mt protocol
+tcp,412,neomodus direct connect (windows file sharing program) / trap convention port
+tcp,413,smsp
+tcp,414,infoseek
+tcp,415,bnet
+tcp,416,silverplatter
+tcp,417,onmux
+tcp,418,hyper-g
+tcp,419,ariel
+tcp,420,smpte
+tcp,421,ariel
+tcp,422,ariel
+tcp,423,ibm operations planning and control start
+tcp,424,ibm operations planning and control track
+tcp,425,icad
+tcp,426,smartsdp
+tcp,427,server location
+tcp,428,ocs_cmu
+tcp,429,ocs_amu
+tcp,430,utmpsd
+tcp,431,utmpcd
+tcp,432,iasd
+tcp,433,nnsp
+tcp,434,mobileip-agent
+tcp,435,mobilip-mn
+tcp,436,dna-cml
+tcp,437,comscm
+tcp,438,dsfgw
+tcp,439,dasp
+tcp,440,sgcp
+tcp,441,decvms-sysmgt
+tcp,442,cvc_hostd
+tcp,443,http protocol over tls/ssl
+tcp,444,simple network paging protocol
+tcp,445,microsoft-ds
+tcp,446,ddm-rdb
+tcp,447,ddm-rfm
+tcp,448,ddm-ssl
+tcp,449,as server mapper
+tcp,450,tserver
+tcp,451,cray network semaphore server
+tcp,452,cray sfs config server
+tcp,453,creativeserver
+tcp,454,contentserver
+tcp,455,creativepartnr
+tcp,456,macon-tcp
+tcp,457,scohelp
+tcp,458,apple quick time
+tcp,459,ampr-rcmd
+tcp,460,skronk
+tcp,461,datarampsrv
+tcp,462,datarampsrvsec
+tcp,463,alpes
+tcp,464,kpasswd
+tcp,465,smtps
+tcp,466,digital-vrc
+tcp,467,mylex-mapd
+tcp,468,proturis
+tcp,469,radio control protocol
+tcp,470,scx-proxy
+tcp,471,mondex
+tcp,472,ljk-login
+tcp,473,hybrid-pop
+tcp,474,tn-tl-w1
+tcp,475,tcpnethaspsrv
+tcp,476,tn-tl-fd1
+tcp,477,ss7ns
+tcp,478,spsc
+tcp,479,iafserver
+tcp,480,iafdbase
+tcp,481,ph service
+tcp,482,bgs-nsi
+tcp,483,ulpnet
+tcp,484,integra software management environment
+tcp,485,air soft power burst
+tcp,486,avian
+tcp,487,saft simple asynchronous file transfer
+tcp,488,gss-http
+tcp,489,nest-protocol
+tcp,490,micom-pfs
+tcp,491,go-login
+tcp,492,transport independent convergence for fna
+tcp,493,transport independent convergence for fna
+tcp,494,pov-ray
+tcp,495,intecourier
+tcp,496,pim-rp-disc
+tcp,497,dantz
+tcp,498,siam
+tcp,499,iso ill protocol
+tcp,500,isakmp
+tcp,501,stmf
+tcp,502,asa-appl-proto
+tcp,503,intrinsa
+tcp,504,citadel
+tcp,505,mailbox-lm
+tcp,506,ohimsrv
+tcp,507,crs
+tcp,508,xvttp
+tcp,509,snare
+tcp,510,firstclass protocol
+tcp,511,passgo
+tcp,512,remote process execution
+tcp,513,remote login
+tcp,514,remote shell
+tcp,515,spooler
+tcp,516,videotex
+tcp,517,like tenex link but across
+tcp,518,talkd
+tcp,519,unixtime
+tcp,520,extended file name server
+tcp,521,ripng
+tcp,522,user location service / ulp
+tcp,523,ibm-db2
+tcp,524,ncp
+tcp,525,timeserver
+tcp,526,newdate
+tcp,527,stock ixchange
+tcp,528,customer ixchange
+tcp,529,irc-serv
+tcp,530,rpc
+tcp,531,chat
+tcp,532,readnews
+tcp,533,for emergency broadcasts
+tcp,534,megamedia admin
+tcp,535,iiop
+tcp,536,opalis-rdv
+tcp,537,networked media streaming protocol
+tcp,538,gdomap
+tcp,539,apertus technologies load determination
+tcp,540,uucpd
+tcp,541,uucp-rlogin
+tcp,542,commerce
+tcp,543,kerberos (v4/v5)
+tcp,544,krcmd
+tcp,545,appleqtcsrvr
+tcp,546,dhcpv6 client
+tcp,547,dhcpv6 server
+tcp,548,appleshare afp over tcp
+tcp,549,idfp
+tcp,550,new-who
+tcp,551,cybercash
+tcp,552,deviceshare
+tcp,553,pirp
+tcp,554,real time stream control protocol
+tcp,555,"phase zero backdoor (win 9x, nt) / dsf"
+tcp,556,rfs server
+tcp,557,openvms-sysipc
+tcp,558,sdnskmp
+tcp,559,teedtap / backdoor.domwis win32 trojan
+tcp,560,rmonitord
+tcp,561,monitor
+tcp,562,chcmd
+tcp,563,aol im / nntp protocol over tls/ssl
+tcp,564,plan 9 file service
+tcp,565,whoami
+tcp,566,streettalk
+tcp,567,banyan-rpc
+tcp,568,microsoft shuttle
+tcp,569,microsoft rome
+tcp,570,demon
+tcp,571,udemon
+tcp,572,sonar
+tcp,573,banyan-vip
+tcp,574,ftp software agent system
+tcp,575,vemmi
+tcp,576,ipcd
+tcp,577,vnas
+tcp,578,ipdd
+tcp,579,decbsrv
+tcp,580,sntp heartbeat
+tcp,581,bundle discovery protocol
+tcp,582,scc security
+tcp,583,philips video-conferencing
+tcp,584,key server
+tcp,585,imap4+ssl
+tcp,586,password change
+tcp,587,message submission (sendmail)
+tcp,588,cal
+tcp,589,eyelink
+tcp,590,tns cml
+tcp,591,filemaker inc. - http alternate
+tcp,592,eudora set
+tcp,593,http rpc ep map
+tcp,594,tpip
+tcp,595,cab protocol
+tcp,596,smsd
+tcp,597,ptc name service
+tcp,598,sco web server manager 3
+tcp,599,aeolon core protocol
+tcp,600,sun ipc server
+tcp,606,cray unified resource manager
+tcp,607,nqs
+tcp,608,sender-initiated/unsolicited file transfer
+tcp,609,npmp-trap
+tcp,610,apple admin service / npmp-local
+tcp,611,npmp-gui
+tcp,612,hmmp indication
+tcp,613,hmmp operation
+tcp,614,sslshell
+tcp,615,internet configuration manager
+tcp,616,sco system administration server
+tcp,617,sco desktop administration server
+tcp,618,dei-icda
+tcp,619,digital evm
+tcp,620,sco webserver manager
+tcp,621,escp
+tcp,622,collaborator
+tcp,623,aux bus shunt
+tcp,624,crypto admin
+tcp,625,dec dlm
+tcp,626,asia
+tcp,627,passgo tivoli
+tcp,628,qmqp
+tcp,629,3com amp3
+tcp,630,rda
+tcp,631,ipp (internet printing protocol)
+tcp,632,bmpp
+tcp,633,service status update (sterling software)
+tcp,634,ginad
+tcp,635,rlz dbase
+tcp,636,ldap protocol over tls/ssl
+tcp,637,lanserver
+tcp,638,mcns-sec
+tcp,639,msdp
+tcp,640,entrust-sps
+tcp,641,repcmd
+tcp,642,esro-emsdp v1.3
+tcp,643,sanity
+tcp,644,dwr
+tcp,645,pssc
+tcp,646,ldp
+tcp,647,dhcp failover
+tcp,648,registry registrar protocol (rrp)
+tcp,649,aminet
+tcp,650,obex
+tcp,651,ieee mms
+tcp,652,udlr_dtcp
+tcp,653,repcmd
+tcp,654,aodv
+tcp,655,tinc
+tcp,656,spmp
+tcp,657,rmc
+tcp,658,tenfold
+tcp,659,url rendezvous
+tcp,660,macos server admin
+tcp,661,hap
+tcp,662,pftp
+tcp,663,purenoise
+tcp,664,secure aux bus
+tcp,665,sun dr
+tcp,666,doom id software
+tcp,667,campaign contribution disclosures - sdr technologies
+tcp,668,mecomm
+tcp,669,meregister
+tcp,670,vacdsm-sws
+tcp,671,vacdsm-app
+tcp,672,vpps-qua
+tcp,673,cimplex
+tcp,674,acap
+tcp,675,dctp
+tcp,676,vpps via
+tcp,677,virtual presence protocol
+tcp,678,gnu gereration foundation ncp
+tcp,679,mrm
+tcp,680,entrust-aaas
+tcp,681,entrust-aams
+tcp,682,xfr
+tcp,683,corba iiop
+tcp,684,corba iiop ssl
+tcp,685,mdc port mapper
+tcp,686,hardware control protocol wismar
+tcp,687,asipregistry
+tcp,688,realm-rusd
+tcp,689,nmap
+tcp,690,vatp
+tcp,691,ms exchange routing
+tcp,692,hyperwave-isp
+tcp,693,connendp
+tcp,694,ha-cluster
+tcp,695,ieee-mms-ssl
+tcp,696,rushd
+tcp,697,uuidgen
+tcp,698,olsr
+tcp,704,errlog copy/server daemon
+tcp,705,agentx
+tcp,706,silc
+tcp,707,w32.nachi worm / borland dsj
+tcp,709,entrust key management service handler
+tcp,710,entrust administration service handler
+tcp,711,cisco tdp
+tcp,729,ibm netview dm/6000 server/client
+tcp,730,ibm netview dm/6000 send/tcp
+tcp,731,ibm netview dm/6000 receive/tcp
+tcp,740,(old) netscout control protocol (old)
+tcp,741,netgw
+tcp,742,network based rev. cont. sys.
+tcp,744,flexible license manager
+tcp,747,fujitsu device control
+tcp,748,russell info sci calendar manager
+tcp,749,kerberos administration
+tcp,750,rfile
+tcp,751,pump
+tcp,752,kerberos password server
+tcp,753,kerberos userreg server
+tcp,754,send
+tcp,758,nlogin
+tcp,759,con
+tcp,760,"kreg, kerberos/4 registration"
+tcp,761,"kpwd, kerberos/4 password"
+tcp,762,quotad
+tcp,763,cycleserv
+tcp,764,omserv
+tcp,765,webster
+tcp,767,phone
+tcp,769,vid
+tcp,770,cadlock
+tcp,771,rtip
+tcp,772,cycleserv2
+tcp,773,submit
+tcp,774,rpasswd
+tcp,775,entomb
+tcp,776,wpages
+tcp,777,multiling http
+tcp,780,wpgs
+tcp,781,hp performance data collector
+tcp,782,node hp performance data managed node
+tcp,783,hp performance data alarm manager
+tcp,786,concert
+tcp,787,qsc
+tcp,799,controlit / remotely possible
+tcp,800,mdbs_daemon / remotely possible
+tcp,801,device
+tcp,808,ccproxy
+tcp,810,fcp
+tcp,828,itm-mcell-s
+tcp,829,pkix-3 ca/ra
+tcp,871,sup server
+tcp,873,rsync
+tcp,886,icl conetion locate server
+tcp,887,icl conetion server info
+tcp,888,cd database protocol
+tcp,900,check point firewall-1 http administration / omg initial refs
+tcp,901,samba web administration tool / realsecure / smpnameres/ netdevil trojan
+tcp,902,vmware authentication daemon / ideafarm-chat
+tcp,903,ideafarm-catch / netdevil trojan
+tcp,911,xact-backup
+tcp,912,vmware authentication daemon
+tcp,989,ftp protocol data over tls/ssl
+tcp,990,ftp protocol control over tls/ssl
+tcp,991,netnews administration system
+tcp,992,telnet protocol over tls/ssl
+tcp,993,imap4 protocol over tls/ssl
+tcp,994,irc protocol over tls/ssl
+tcp,995,pop3 protocol over tls/ssl
+tcp,996,vsinet
+tcp,997,maitrd
+tcp,998,busboy
+tcp,999,puprouter
+tcp,1000,cadlock
+tcp,1002,microsoft site server internet locator service (netmeeting/icf)
+tcp,1008,ufs-aware server
+tcp,1010,surf
+tcp,1011,doly (windows trojan)
+tcp,1015,doly (windows trojan)
+tcp,1023,reserved
+tcp,1024,reserved
+tcp,1025,mstask / network blackjack
+tcp,1026,mstask / remote login network terminal
+tcp,1030,bbn iad
+tcp,1031,inetinfo / bbn iad
+tcp,1032,bbn iad
+tcp,1042,w32.mydoom.l virus
+tcp,1047,sun's neo object request broker
+tcp,1048,sun's neo object request broker
+tcp,1049,tobit david postman vpmn
+tcp,1050,corba management agent
+tcp,1051,optima vnet
+tcp,1052,dynamic dns tools
+tcp,1053,remote assistant (ra)
+tcp,1054,brvread
+tcp,1055,ansys - license manager
+tcp,1056,vfo
+tcp,1057,startron
+tcp,1058,nim
+tcp,1059,nimreg
+tcp,1060,polestar
+tcp,1061,kiosk
+tcp,1062,veracity
+tcp,1063,kyoceranetdev
+tcp,1064,jstel
+tcp,1065,syscomlan
+tcp,1066,fpo-fns
+tcp,1067,installation bootstrap proto. serv.
+tcp,1068,installation bootstrap proto. cli.
+tcp,1069,cognex-insight
+tcp,1070,gmrupdateserv
+tcp,1071,bsquare-voip
+tcp,1072,cardax
+tcp,1073,bridgecontrol
+tcp,1074,fastechnologies license manager
+tcp,1075,rdrmshc
+tcp,1076,dab sti-c
+tcp,1077,imgames
+tcp,1078,emanagecstp
+tcp,1079,asprovatalk
+tcp,1080,socks / w32.beagle.ab trojan
+tcp,1081,pvuniwien
+tcp,1082,amt-esd-prot
+tcp,1083,anasoft license manager
+tcp,1084,anasoft license manager
+tcp,1085,web objects
+tcp,1086,cpl scrambler logging
+tcp,1087,cpl scrambler internal
+tcp,1088,cpl scrambler alarm log
+tcp,1089,ff annunciation
+tcp,1090,ff fieldbus message specification
+tcp,1091,ff system management
+tcp,1092,obrpd
+tcp,1093,proofd
+tcp,1094,rootd
+tcp,1095,nicelink
+tcp,1096,common name resolution protocol
+tcp,1097,sun cluster manager
+tcp,1098,rmi activation
+tcp,1099,rmi registry
+tcp,1100,mctp
+tcp,1101,pt2-discover
+tcp,1102,adobe server 1
+tcp,1103,adobe server 2
+tcp,1104,xrl
+tcp,1105,ftranhc
+tcp,1106,isoipsigport-1
+tcp,1107,isoipsigport-2
+tcp,1108,ratio-adp
+tcp,1109,pop with kerberos
+tcp,1110,cluster status info
+tcp,1111,lm social server
+tcp,1112,intelligent communication protocol
+tcp,1114,mini sql
+tcp,1115,ardus transfer
+tcp,1116,ardus control
+tcp,1117,ardus multicast transfer
+tcp,1123,murray
+tcp,1127,sup debugging
+tcp,1155,network file access
+tcp,1161,health polling
+tcp,1162,health trap
+tcp,1169,tripwire
+tcp,1178,skk (kanji input)
+tcp,1180,millicent client proxy
+tcp,1188,hp web admin
+tcp,1200,scol
+tcp,1201,nucleus sand
+tcp,1202,caiccipc
+tcp,1203,license validation
+tcp,1204,log request listener
+tcp,1205,accord-mgc
+tcp,1206,anthony data
+tcp,1207,metasage
+tcp,1208,seagull ais
+tcp,1209,ipcd3
+tcp,1210,eoss
+tcp,1211,groove dpp
+tcp,1212,lupa
+tcp,1213,mpc lifenet
+tcp,1214,kazaa (morpheus)
+tcp,1215,scanstat 1.0
+tcp,1216,etebac 5
+tcp,1217,hpss-ndapi
+tcp,1218,aeroflight-ads
+tcp,1219,aeroflight-ret
+tcp,1220,qt server admin
+tcp,1221,sweetware apps
+tcp,1222,sni r&d network
+tcp,1223,tgp
+tcp,1224,vpnz
+tcp,1225,slinkysearch
+tcp,1226,stgxfws
+tcp,1227,dns2go
+tcp,1228,florence
+tcp,1229,novell zfs
+tcp,1234,w32.beagle.y trojan / infoseek search agent
+tcp,1239,nmsd
+tcp,1241,nessus daemon / remote message service
+tcp,1243,subseven (windows trojan)
+tcp,1245,subseven backdoor remote access tool
+tcp,1248,hermes
+tcp,1270,microsoft operations manager mom-encrypted
+tcp,1300,h323 host call secure
+tcp,1310,husky
+tcp,1311,rxmon
+tcp,1312,sti envision
+tcp,1313,bmc_patroldb
+tcp,1314,photoscript distributed printing system
+tcp,1319,panja-icsp
+tcp,1320,panja-axbnet
+tcp,1321,pip
+tcp,1335,digital notary protocol
+tcp,1345,vpjp
+tcp,1346,alta analytics license manager
+tcp,1347,multi media conferencing
+tcp,1348,multi media conferencing
+tcp,1349,registration network protocol
+tcp,1350,registration network protocol
+tcp,1351,digital tool works (mit)
+tcp,1352,lotus notes
+tcp,1353,relief consulting
+tcp,1354,rightbrain software
+tcp,1355,intuitive edge
+tcp,1356,cuillamartin company
+tcp,1357,electronic pegboard
+tcp,1358,connlcli
+tcp,1359,ftsrv
+tcp,1360,mimer
+tcp,1361,linx
+tcp,1362,timeflies
+tcp,1363,network datamover requester
+tcp,1364,network datamover server
+tcp,1365,network software associates
+tcp,1366,novell netware comm service platform
+tcp,1367,dcs
+tcp,1368,screencast
+tcp,1369,globalview to unix shell
+tcp,1370,unix shell to globalview
+tcp,1371,fujitsu config protocol
+tcp,1372,fujitsu config protocol
+tcp,1373,chromagrafx
+tcp,1374,epi software systems
+tcp,1375,bytex
+tcp,1376,ibm person to person software
+tcp,1377,cichlid license manager
+tcp,1378,elan license manager
+tcp,1379,integrity solutions
+tcp,1380,telesis network license manager
+tcp,1381,apple network license manager
+tcp,1382,udt_os
+tcp,1383,gw hannaway network license manager
+tcp,1384,objective solutions license manager
+tcp,1385,atex publishing license manager
+tcp,1386,checksum license manager
+tcp,1387,computer aided design software inc lm
+tcp,1388,objective solutions database cache
+tcp,1389,document manager
+tcp,1390,storage controller
+tcp,1391,storage access server
+tcp,1392,print manager
+tcp,1393,network log server
+tcp,1394,network log client
+tcp,1395,pc workstation manager software
+tcp,1396,dvl active mail
+tcp,1397,audio active mail
+tcp,1398,video active mail
+tcp,1399,cadkey license manager
+tcp,1400,cadkey tablet daemon
+tcp,1401,goldleaf license manager
+tcp,1402,prospero resource manager
+tcp,1403,prospero resource manager
+tcp,1404,infinite graphics license manager
+tcp,1405,ibm remote execution starter
+tcp,1406,netlabs license manager
+tcp,1407,dbsa license manager
+tcp,1408,sophia license manager
+tcp,1409,here license manager
+tcp,1410,hiq license manager
+tcp,1411,audiofile
+tcp,1412,innosys
+tcp,1413,innosys-acl
+tcp,1414,ibm mqseries
+tcp,1415,dbstar
+tcp,1416,novell lu6.2
+tcp,1417,timbuktu service 1 port
+tcp,1418,timbuktu service 2 port
+tcp,1419,timbuktu service 3 port
+tcp,1420,timbuktu service 4 port
+tcp,1421,gandalf license manager
+tcp,1422,autodesk license manager
+tcp,1423,essbase arbor software
+tcp,1424,hybrid encryption protocol
+tcp,1425,zion software license manager
+tcp,1426,satellite-data acquisition system 1
+tcp,1427,mloadd monitoring tool
+tcp,1428,informatik license manager
+tcp,1429,hypercom nms
+tcp,1430,hypercom tpdu
+tcp,1431,reverse gossip transport
+tcp,1432,blueberry software license manager
+tcp,1433,microsoft-sql-server
+tcp,1434,microsoft-sql-monitor
+tcp,1435,ibm cics
+tcp,1436,satellite-data acquisition system 2
+tcp,1437,tabula
+tcp,1438,eicon security agent/server
+tcp,1439,eicon x25/sna gateway
+tcp,1440,eicon service location protocol
+tcp,1441,cadis license management
+tcp,1442,cadis license management
+tcp,1443,integrated engineering software
+tcp,1444,marcam license management
+tcp,1445,proxima license manager
+tcp,1446,optical research associates license manager
+tcp,1447,applied parallel research lm
+tcp,1448,openconnect license manager
+tcp,1449,peport
+tcp,1450,tandem distributed workbench facility
+tcp,1451,ibm information management
+tcp,1452,gte government systems license man
+tcp,1453,genie license manager
+tcp,1454,interhdl license manager
+tcp,1455,esl license manager
+tcp,1456,dca
+tcp,1457,valisys license manager
+tcp,1458,nichols research corp.
+tcp,1459,proshare notebook application
+tcp,1460,proshare notebook application
+tcp,1461,ibm wireless lan
+tcp,1462,world license manager
+tcp,1463,nucleus
+tcp,1464,msl license manager
+tcp,1465,pipes platform
+tcp,1466,ocean software license manager
+tcp,1467,csdmbase
+tcp,1468,csdm
+tcp,1469,active analysis limited license manager
+tcp,1470,universal analytics
+tcp,1471,csdmbase
+tcp,1472,csdm
+tcp,1473,openmath
+tcp,1474,telefinder
+tcp,1475,taligent license manager
+tcp,1476,clvm-cfg
+tcp,1477,ms-sna-server
+tcp,1478,ms-sna-base
+tcp,1479,dberegister
+tcp,1480,pacerforum
+tcp,1481,airs
+tcp,1482,miteksys license manager
+tcp,1483,afs license manager
+tcp,1484,confluent license manager
+tcp,1485,lansource
+tcp,1486,nms_topo_serv
+tcp,1487,localinfosrvr
+tcp,1488,docstor
+tcp,1489,dmdocbroker
+tcp,1490,insitu-conf
+tcp,1491,anynetgateway
+tcp,1492,stone-design-1
+tcp,1493,netmap_lm
+tcp,1494,citrix/ica
+tcp,1495,cvc
+tcp,1496,liberty-lm
+tcp,1497,rfx-lm
+tcp,1498,sybase sql any
+tcp,1499,federico heinz consultora
+tcp,1500,vlsi license manager
+tcp,1501,satellite-data acquisition system 3
+tcp,1502,shiva
+tcp,1503,ms netmeeting / t.120 / databeam
+tcp,1504,evb software engineering license manager
+tcp,1505,funk software inc.
+tcp,1506,universal time daemon (utcd)
+tcp,1507,symplex
+tcp,1508,diagmond
+tcp,1509,robcad ltd. license manager
+tcp,1510,midland valley exploration ltd. lic. man.
+tcp,1511,3l-l1
+tcp,1512,microsoft's windows internet name service
+tcp,1513,fujitsu systems business of america inc
+tcp,1514,fujitsu systems business of america inc
+tcp,1515,ifor-protocol
+tcp,1516,virtual places audio data
+tcp,1517,virtual places audio control
+tcp,1518,virtual places video data
+tcp,1519,virtual places video control
+tcp,1520,atm zip office
+tcp,1521,oracle8i listener / ncube license manager
+tcp,1522,ricardo north america license manager
+tcp,1523,cichild
+tcp,1524,dtspcd / ingres
+tcp,1525,oracle / prospero directory service non-priv
+tcp,1526,prospero data access prot non-priv
+tcp,1527,oracle
+tcp,1528,micautoreg
+tcp,1529,oracle
+tcp,1530,oracle extproc (plsextproc) / rap-service
+tcp,1531,rap-listen
+tcp,1532,miroconnect
+tcp,1533,virtual places software
+tcp,1534,micromuse-lm
+tcp,1535,ampr-info
+tcp,1536,ampr-inter
+tcp,1537,isi-lm
+tcp,1538,3ds-lm
+tcp,1539,intellistor license manager
+tcp,1540,rds
+tcp,1541,rds2
+tcp,1542,gridgen-elmd
+tcp,1543,simba-cs
+tcp,1544,aspeclmd
+tcp,1545,vistium-share
+tcp,1546,abbaccuray
+tcp,1547,laplink
+tcp,1548,axon license manager
+tcp,1549,shiva hose
+tcp,1550,image storage license manager 3m company
+tcp,1551,hecmtl-db
+tcp,1552,pciarray
+tcp,1553,sna-cs
+tcp,1554,caci products company license manager
+tcp,1555,livelan
+tcp,1556,ashwin ci tecnologies
+tcp,1557,arbortext license manager
+tcp,1558,xingmpeg
+tcp,1559,web2host
+tcp,1560,asci-val
+tcp,1561,facilityview
+tcp,1562,pconnectmgr
+tcp,1563,cadabra license manager
+tcp,1564,pay-per-view
+tcp,1565,windd
+tcp,1566,corelvideo
+tcp,1567,jlicelmd
+tcp,1568,tsspmap
+tcp,1569,ets
+tcp,1570,orbixd
+tcp,1571,oracle remote data base
+tcp,1572,chipcom license manager
+tcp,1573,itscomm-ns
+tcp,1574,mvel-lm
+tcp,1575,oraclenames
+tcp,1576,moldflow-lm
+tcp,1577,hypercube-lm
+tcp,1578,jacobus license manager
+tcp,1579,ioc-sea-lm
+tcp,1580,tn-tl-r1
+tcp,1581,mil-2045-47001
+tcp,1582,msims
+tcp,1583,simbaexpress
+tcp,1584,tn-tl-fd2
+tcp,1585,intv
+tcp,1586,ibm-abtact
+tcp,1587,pra_elmd
+tcp,1588,triquest-lm
+tcp,1589,vqp
+tcp,1590,gemini-lm
+tcp,1591,ncpm-pm
+tcp,1592,commonspace
+tcp,1593,mainsoft-lm
+tcp,1594,sixtrak
+tcp,1595,radio
+tcp,1596,radio-sm
+tcp,1597,orbplus-iiop
+tcp,1598,picknfs
+tcp,1599,simbaservices
+tcp,1600,bofra-a worm / issd
+tcp,1601,aas
+tcp,1602,inspect
+tcp,1603,pickodbc
+tcp,1604,icabrowser
+tcp,1605,salutation manager (salutation protocol)
+tcp,1606,salutation manager (slm-api)
+tcp,1607,stt
+tcp,1608,smart corp. license manager
+tcp,1609,isysg-lm
+tcp,1610,taurus-wh
+tcp,1611,inter library loan
+tcp,1612,netbill transaction server
+tcp,1613,netbill key repository
+tcp,1614,netbill credential server
+tcp,1615,netbill authorization server
+tcp,1616,netbill product server
+tcp,1617,nimrod inter-agent communication
+tcp,1618,skytelnet
+tcp,1619,xs-openstorage
+tcp,1620,faxportwinport
+tcp,1621,softdataphone
+tcp,1622,ontime
+tcp,1623,jaleosnd
+tcp,1624,udp-sr-port
+tcp,1625,svs-omagent
+tcp,1626,shockwave
+tcp,1627,t.128 gateway
+tcp,1628,lontalk normal
+tcp,1629,lontalk urgent
+tcp,1630,oracle net8 cman
+tcp,1631,visit view
+tcp,1632,pammratc
+tcp,1633,pammrpc
+tcp,1634,log on america probe
+tcp,1635,edb server 1
+tcp,1636,cablenet control protocol
+tcp,1637,cablenet admin protocol
+tcp,1638,bofra-a worm / cablenet info protocol
+tcp,1639,cert-initiator
+tcp,1640,cert-responder
+tcp,1641,invision
+tcp,1642,isis-am
+tcp,1643,isis-ambc
+tcp,1644,satellite-data acquisition system 4
+tcp,1645,datametrics
+tcp,1646,sa-msg-port
+tcp,1647,rsap
+tcp,1648,concurrent-lm
+tcp,1649,kermit
+tcp,1650,nkd
+tcp,1651,shiva_confsrvr
+tcp,1652,xnmp
+tcp,1653,alphatech-lm
+tcp,1654,stargatealerts
+tcp,1655,dec-mbadmin
+tcp,1656,dec-mbadmin-h
+tcp,1657,fujitsu-mmpdc
+tcp,1658,sixnetudr
+tcp,1659,silicon grail license manager
+tcp,1660,skip-mc-gikreq
+tcp,1661,netview-aix-1
+tcp,1662,netview-aix-2
+tcp,1663,netview-aix-3
+tcp,1664,netview-aix-4
+tcp,1665,netview-aix-5
+tcp,1666,netview-aix-6
+tcp,1667,netview-aix-7
+tcp,1668,netview-aix-8
+tcp,1669,netview-aix-9
+tcp,1670,netview-aix-10
+tcp,1671,netview-aix-11
+tcp,1672,netview-aix-12
+tcp,1673,intel proshare multicast
+tcp,1674,intel proshare multicast
+tcp,1675,pacific data products
+tcp,1676,netcomm1
+tcp,1677,groupwise
+tcp,1678,prolink
+tcp,1679,darcorp-lm
+tcp,1680,microcom-sbp
+tcp,1681,sd-elmd
+tcp,1682,lanyon-lantern
+tcp,1683,ncpm-hip
+tcp,1684,snaresecure
+tcp,1685,n2nremote
+tcp,1686,cvmon
+tcp,1687,nsjtp-ctrl
+tcp,1688,nsjtp-data
+tcp,1689,firefox
+tcp,1690,ng-umds
+tcp,1691,empire-empuma
+tcp,1692,sstsys-lm
+tcp,1693,rrirtr
+tcp,1694,rrimwm
+tcp,1695,rrilwm
+tcp,1696,rrifmm
+tcp,1697,rrisat
+tcp,1698,rsvp-encapsulation-1
+tcp,1699,rsvp-encapsulation-2
+tcp,1700,mps-raft
+tcp,1701,l2tp / aol
+tcp,1702,deskshare
+tcp,1703,hb-engine
+tcp,1704,bcs-broker
+tcp,1705,slingshot
+tcp,1706,jetform
+tcp,1707,vdmplay
+tcp,1708,gat-lmd
+tcp,1709,centra
+tcp,1710,impera
+tcp,1711,pptconference
+tcp,1712,resource monitoring service
+tcp,1713,conferencetalk
+tcp,1714,sesi-lm
+tcp,1715,houdini-lm
+tcp,1716,xmsg
+tcp,1717,fj-hdnet
+tcp,1718,h323gatedisc
+tcp,1719,h323gatestat
+tcp,1720,h323hostcall
+tcp,1721,caicci
+tcp,1722,hks license manager
+tcp,1723,pptp
+tcp,1724,csbphonemaster
+tcp,1725,iden-ralp
+tcp,1726,iberiagames
+tcp,1727,winddx
+tcp,1728,telindus
+tcp,1729,citynl license management
+tcp,1730,roketz
+tcp,1731,ms netmeeting / audio call control / msiccp
+tcp,1732,proxim
+tcp,1733,sims - siipat protocol for alarm transmission
+tcp,1734,camber corporation license management
+tcp,1735,privatechat
+tcp,1736,street-stream
+tcp,1737,ultimad
+tcp,1738,gamegen1
+tcp,1739,webaccess
+tcp,1740,encore
+tcp,1741,cisco-net-mgmt
+tcp,1742,3com-nsd
+tcp,1743,cinema graphics license manager
+tcp,1744,ncpm-ft
+tcp,1745,isa server proxy autoconfig / remote winsock
+tcp,1746,ftrapid-1
+tcp,1747,ftrapid-2
+tcp,1748,oracle-em1
+tcp,1749,aspen-services
+tcp,1750,simple socket library's portmaster
+tcp,1751,swiftnet
+tcp,1752,leap of faith research license manager
+tcp,1753,translogic license manager
+tcp,1754,oracle-em2
+tcp,1755,microsoft streaming server
+tcp,1756,capfast-lmd
+tcp,1757,cnhrp
+tcp,1758,tftp-mcast
+tcp,1759,spss license manager
+tcp,1760,www-ldap-gw
+tcp,1761,cft-0
+tcp,1762,cft-1
+tcp,1763,cft-2
+tcp,1764,cft-3
+tcp,1765,cft-4
+tcp,1766,cft-5
+tcp,1767,cft-6
+tcp,1768,cft-7
+tcp,1769,bmc-net-adm
+tcp,1770,bmc-net-svc
+tcp,1771,vaultbase
+tcp,1772,essweb gateway
+tcp,1773,kmscontrol
+tcp,1774,global-dtserv
+tcp,1776,federal emergency management information system
+tcp,1777,powerguardian
+tcp,1778,prodigy-internet
+tcp,1779,pharmasoft
+tcp,1780,dpkeyserv
+tcp,1781,answersoft-lm
+tcp,1782,hp jetsend
+tcp,1783,port 04/14/00 fujitsu.co.jp
+tcp,1784,finle license manager
+tcp,1785,wind river systems license manager
+tcp,1786,funk-logger
+tcp,1787,funk-license
+tcp,1788,psmond
+tcp,1789,hello
+tcp,1790,narrative media streaming protocol
+tcp,1791,ea1
+tcp,1792,ibm-dt-2
+tcp,1793,rsc-robot
+tcp,1794,cera-bcm
+tcp,1795,dpi-proxy
+tcp,1796,vocaltec server administration
+tcp,1797,uma
+tcp,1798,event transfer protocol
+tcp,1799,netrisk
+tcp,1800,ansys-license manager
+tcp,1801,microsoft message queuing
+tcp,1802,concomp1
+tcp,1803,hp-hcip-gwy
+tcp,1804,enl
+tcp,1805,enl-name
+tcp,1806,musiconline
+tcp,1807,fujitsu hot standby protocol
+tcp,1808,oracle-vp2
+tcp,1809,oracle-vp1
+tcp,1810,jerand license manager
+tcp,1811,scientia-sdb
+tcp,1812,radius
+tcp,1813,radius accounting / hacktool.sksocket
+tcp,1814,tdp suite
+tcp,1815,mmpft
+tcp,1816,harp
+tcp,1817,rkb-oscs
+tcp,1818,enhanced trivial file transfer protocol
+tcp,1819,plato license manager
+tcp,1820,mcagent
+tcp,1821,donnyworld
+tcp,1822,es-elmd
+tcp,1823,unisys natural language license manager
+tcp,1824,metrics-pas
+tcp,1825,direcpc video
+tcp,1826,ardt
+tcp,1827,asi
+tcp,1828,itm-mcell-u
+tcp,1829,optika emedia
+tcp,1830,oracle net8 cman admin
+tcp,1831,myrtle
+tcp,1832,thoughttreasure
+tcp,1833,udpradio
+tcp,1834,ardus unicast
+tcp,1835,ardus multicast
+tcp,1836,ste-smsc
+tcp,1837,csoft1
+tcp,1838,talnet
+tcp,1839,netopia-vo1
+tcp,1840,netopia-vo2
+tcp,1841,netopia-vo3
+tcp,1842,netopia-vo4
+tcp,1843,netopia-vo5
+tcp,1844,direcpc-dll
+tcp,1850,gsi
+tcp,1851,ctcd
+tcp,1860,sunscalar services
+tcp,1861,lecroy vicp
+tcp,1862,techra-server
+tcp,1863,msn messenger
+tcp,1864,paradym 31 port
+tcp,1865,entp
+tcp,1870,sunscalar dns service
+tcp,1871,cano central 0
+tcp,1872,cano central 1
+tcp,1873,fjmpjps
+tcp,1874,fjswapsnp
+tcp,1881,ibm mqseries
+tcp,1895,vista 4gl
+tcp,1899,mc2studios
+tcp,1900,ssdp
+tcp,1901,fujitsu icl terminal emulator program a
+tcp,1902,fujitsu icl terminal emulator program b
+tcp,1903,local link name resolution
+tcp,1904,fujitsu icl terminal emulator program c
+tcp,1905,secure up.link gateway protocol
+tcp,1906,tportmapperreq
+tcp,1907,intrastar
+tcp,1908,dawn
+tcp,1909,global world link
+tcp,1910,ultrabac
+tcp,1911,starlight networks multimedia transport protocol
+tcp,1912,rhp-iibp
+tcp,1913,armadp
+tcp,1914,elm-momentum
+tcp,1915,facelink
+tcp,1916,persoft persona
+tcp,1917,noagent
+tcp,1918,candle directory service - nds
+tcp,1919,candle directory service - dch
+tcp,1920,candle directory service - ferret
+tcp,1921,noadmin
+tcp,1922,tapestry
+tcp,1923,spice
+tcp,1924,xiip
+tcp,1930,drive appserver
+tcp,1931,amd sched
+tcp,1944,close-combat
+tcp,1945,dialogic-elmd
+tcp,1946,tekpls
+tcp,1947,hlserver
+tcp,1948,eye2eye
+tcp,1949,isma easdaq live
+tcp,1950,isma easdaq test
+tcp,1951,bcs-lmserver
+tcp,1952,mpnjsc
+tcp,1953,rapid base
+tcp,1961,bts appserver
+tcp,1962,biap-mp
+tcp,1963,webmachine
+tcp,1964,solid e engine
+tcp,1965,tivoli npm
+tcp,1966,slush
+tcp,1967,sns quote
+tcp,1972,cache
+tcp,1973,data link switching remote access protocol
+tcp,1974,drp
+tcp,1975,tco flash agent
+tcp,1976,tco reg agent
+tcp,1977,tco address book
+tcp,1978,unisql
+tcp,1979,unisql java
+tcp,1984,bb
+tcp,1985,hot standby router protocol
+tcp,1986,cisco license management
+tcp,1987,cisco rsrb priority 1 port
+tcp,1988,cisco rsrb priority 2 port
+tcp,1989,mhsnet system
+tcp,1990,cisco stun priority 1 port
+tcp,1991,cisco stun priority 2 port
+tcp,1992,ipsendmsg
+tcp,1993,cisco snmp tcp port
+tcp,1994,cisco serial tunnel port
+tcp,1995,cisco perf port
+tcp,1996,cisco remote srb port
+tcp,1997,cisco gateway discovery protocol
+tcp,1998,cisco x.25 service (xot)
+tcp,1999,cisco identification port / subseven (windows trojan) / backdoor (windows trojan)
+tcp,2000,remotely anywhere / via net.works postoffice plus
+tcp,2001,cisco mgmt / remotely anywhere
+tcp,2002,globe
+tcp,2003,gnu finger
+tcp,2004,mailbox
+tcp,2005,encrypted symmetric telnet/login
+tcp,2006,invokator
+tcp,2007,dectalk
+tcp,2008,conf
+tcp,2009,news
+tcp,2010,search
+tcp,2011,raid
+tcp,2012,ttyinfo
+tcp,2013,raid-am
+tcp,2014,troff
+tcp,2015,cypress
+tcp,2016,bootserver
+tcp,2017,cypress-stat
+tcp,2018,terminaldb
+tcp,2019,whosockami
+tcp,2020,xinupageserver
+tcp,2021,servexec
+tcp,2022,down
+tcp,2023,xinuexpansion3
+tcp,2024,xinuexpansion4
+tcp,2025,ellpack
+tcp,2026,scrabble
+tcp,2027,shadowserver
+tcp,2028,submitserver
+tcp,2030,device2
+tcp,2032,blackboard
+tcp,2033,glogger
+tcp,2034,scoremgr
+tcp,2035,imsldoc
+tcp,2038,objectmanager
+tcp,2040,lam
+tcp,2041,w32.korgo worm / interbase
+tcp,2042,isis
+tcp,2043,isis-bcast
+tcp,2044,rimsl
+tcp,2045,cdfunc
+tcp,2046,sdfunc
+tcp,2047,dls
+tcp,2048,dls-monitor
+tcp,2049,network file system - sun microsystems
+tcp,2053,kerberos de-multiplexer
+tcp,2054,distrib-net
+tcp,2065,data link switch read port number
+tcp,2067,data link switch write port number
+tcp,2080,wingate
+tcp,2090,load report protocol
+tcp,2091,prp
+tcp,2092,descent 3
+tcp,2093,nbx cc
+tcp,2094,nbx au
+tcp,2095,nbx ser
+tcp,2096,nbx dir
+tcp,2097,jet form preview
+tcp,2098,dialog port
+tcp,2099,h.225.0 annex g
+tcp,2100,amiganetfs
+tcp,2101,microsoft message queuing / rtcm-sc104
+tcp,2102,zephyr server
+tcp,2103,microsoft message queuing rpc / zephyr serv-hm connection
+tcp,2104,zephyr hostmanager
+tcp,2105,microsoft message queuing rpc / minipay
+tcp,2106,mzap
+tcp,2107,microsoft message queuing management / bintec admin
+tcp,2108,comcam
+tcp,2109,ergolight
+tcp,2110,umsp
+tcp,2111,dsatp
+tcp,2112,idonix metanet
+tcp,2113,hsl storm
+tcp,2114,newheights
+tcp,2115,kdm / bugs (windows trojan)
+tcp,2116,ccowcmr
+tcp,2117,mentaclient
+tcp,2118,mentaserver
+tcp,2119,gsigatekeeper
+tcp,2120,quick eagle networks cp
+tcp,2121,ccproxy ftp / scientia-ssdb
+tcp,2122,caupc remote control
+tcp,2123,gtp-control plane (3gpp)
+tcp,2124,elatelink
+tcp,2125,lockstep
+tcp,2126,pktcable-cops
+tcp,2127,index-pc-wb
+tcp,2128,net steward control
+tcp,2129,cs-live.com
+tcp,2130,swc-xds
+tcp,2131,avantageb2b
+tcp,2132,avail-epmap
+tcp,2133,zymed-zpp
+tcp,2134,avenue
+tcp,2135,grid resource information server
+tcp,2136,appworxsrv
+tcp,2137,connect
+tcp,2138,unbind-cluster
+tcp,2139,ias-auth
+tcp,2140,ias-reg
+tcp,2141,ias-admind
+tcp,2142,tdm-over-ip
+tcp,2143,live vault job control
+tcp,2144,live vault fast object transfer
+tcp,2145,live vault remote diagnostic console support
+tcp,2146,live vault admin event notification
+tcp,2147,live vault authentication
+tcp,2148,veritas universal communication layer
+tcp,2149,acptsys
+tcp,2150,dynamic3d
+tcp,2151,docent
+tcp,2152,gtp-user plane (3gpp)
+tcp,2165,x-bone api
+tcp,2166,iwserver
+tcp,2180,millicent vendor gateway server
+tcp,2181,eforward
+tcp,2190,tivoconnect beacon
+tcp,2191,tvbus messaging
+tcp,2200,ici
+tcp,2201,advanced training system program
+tcp,2202,int. multimedia teleconferencing cosortium
+tcp,2213,kali
+tcp,2220,ganymede
+tcp,2221,rockwell csp1
+tcp,2222,rockwell csp2
+tcp,2223,rockwell csp3
+tcp,2232,ivs video default
+tcp,2233,infocrypt
+tcp,2234,directplay
+tcp,2235,sercomm-wlink
+tcp,2236,nani
+tcp,2237,optech port1 license manager
+tcp,2238,aviva sna server
+tcp,2239,image query
+tcp,2240,recipe
+tcp,2241,ivs daemon
+tcp,2242,folio remote server
+tcp,2243,magicom protocol
+tcp,2244,nms server
+tcp,2245,hao
+tcp,2279,xmquery
+tcp,2280,lnvpoller
+tcp,2281,lnvconsole
+tcp,2282,lnvalarm
+tcp,2283,dumaru.y (windows trojan) / lnvstatus
+tcp,2284,lnvmaps
+tcp,2285,lnvmailmon
+tcp,2286,nas-metering
+tcp,2287,dna
+tcp,2288,netml
+tcp,2294,konshus license manager (flex)
+tcp,2295,advant license manager
+tcp,2296,theta license manager (rainbow)
+tcp,2297,d2k datamover 1
+tcp,2298,d2k datamover 2
+tcp,2299,pc telecommute
+tcp,2300,cvmmon
+tcp,2301,compaq http
+tcp,2302,bindery support
+tcp,2303,proxy gateway
+tcp,2304,attachmate uts
+tcp,2305,mt scaleserver
+tcp,2306,tappi boxnet
+tcp,2307,pehelp
+tcp,2308,sdhelp
+tcp,2309,sd server
+tcp,2310,sd client
+tcp,2311,message service
+tcp,2313,iapp (inter access point protocol)
+tcp,2314,cr websystems
+tcp,2315,precise sft.
+tcp,2316,sent license manager
+tcp,2317,attachmate g32
+tcp,2318,cadence control
+tcp,2319,infolibria
+tcp,2320,siebel ns
+tcp,2321,rdlap over udp
+tcp,2322,ofsd
+tcp,2323,3d-nfsd
+tcp,2324,cosmocall
+tcp,2325,design space license management
+tcp,2326,idcp
+tcp,2327,xingcsm
+tcp,2328,netrix sftm
+tcp,2329,nvd
+tcp,2330,tscchat
+tcp,2331,agentview
+tcp,2332,rcc host
+tcp,2333,snapp
+tcp,2334,ace client auth
+tcp,2335,ace proxy
+tcp,2336,apple ug control
+tcp,2337,ideesrv
+tcp,2338,norton lambert
+tcp,2339,3com webview
+tcp,2340,wrs registry
+tcp,2341,xio status
+tcp,2342,seagate manage exec
+tcp,2343,nati logos
+tcp,2344,fcmsys
+tcp,2345,dbm
+tcp,2346,game connection port
+tcp,2347,game announcement and location
+tcp,2348,information to query for game status
+tcp,2349,diagnostics port
+tcp,2350,psbserver
+tcp,2351,psrserver
+tcp,2352,pslserver
+tcp,2353,pspserver
+tcp,2354,psprserver
+tcp,2355,psdbserver
+tcp,2356,gxt license managemant
+tcp,2357,unihub server
+tcp,2358,futrix
+tcp,2359,flukeserver
+tcp,2360,nexstorindltd
+tcp,2361,tl1
+tcp,2362,digiman
+tcp,2363,media central nfsd
+tcp,2364,oi-2000
+tcp,2365,dbref
+tcp,2366,qip-login
+tcp,2367,service control
+tcp,2368,opentable
+tcp,2369,acs2000 dsp
+tcp,2370,l3-hbmon
+tcp,2381,compaq https
+tcp,2382,microsoft olap
+tcp,2383,microsoft olap
+tcp,2384,sd-request
+tcp,2389,openview session mgr
+tcp,2390,rsmtp
+tcp,2391,3com net management
+tcp,2392,tactical auth
+tcp,2393,ms olap 1
+tcp,2394,ms olap 2
+tcp,2395,lan900 remote
+tcp,2396,wusage
+tcp,2397,ncl
+tcp,2398,orbiter
+tcp,2399,filemaker inc. - data access layer
+tcp,2400,opequus server
+tcp,2401,cvspserver
+tcp,2402,taskmaster 2000 server
+tcp,2403,taskmaster 2000 web
+tcp,2404,iec870-5-104
+tcp,2405,trc netpoll
+tcp,2406,jediserver
+tcp,2407,orion
+tcp,2408,optimanet
+tcp,2409,sns protocol
+tcp,2410,vrts registry
+tcp,2411,netwave ap management
+tcp,2412,cdn
+tcp,2413,orion-rmi-reg
+tcp,2414,interlingua
+tcp,2415,comtest
+tcp,2416,rmt server
+tcp,2417,composit server
+tcp,2418,cas
+tcp,2419,attachmate s2s
+tcp,2420,dsl remote management
+tcp,2421,g-talk
+tcp,2422,crmsbits
+tcp,2423,rnrp
+tcp,2424,kofax-svr
+tcp,2425,fujitsu app manager
+tcp,2426,appliant tcp
+tcp,2427,media gateway control protocol gateway
+tcp,2428,one way trip time
+tcp,2429,ft-role
+tcp,2430,venus
+tcp,2431,venus-se
+tcp,2432,codasrv
+tcp,2433,codasrv-se
+tcp,2434,pxc-epmap
+tcp,2435,optilogic
+tcp,2436,top/x
+tcp,2437,unicontrol
+tcp,2438,msp
+tcp,2439,sybasedbsynch
+tcp,2440,spearway lockers
+tcp,2441,pvsw-inet
+tcp,2442,netangel
+tcp,2443,powerclient central storage facility
+tcp,2444,bt pp2 sectrans
+tcp,2445,dtn1
+tcp,2446,bues_service
+tcp,2447,openview nnm daemon
+tcp,2448,hpppsvr
+tcp,2449,ratl
+tcp,2450,netadmin
+tcp,2451,netchat
+tcp,2452,snifferclient
+tcp,2453,madge-om
+tcp,2454,indx-dds
+tcp,2455,wago-io-system
+tcp,2456,altav-remmgt
+tcp,2457,rapido_ip
+tcp,2458,griffin
+tcp,2459,community
+tcp,2460,ms-theater
+tcp,2461,qadmifoper
+tcp,2462,qadmifevent
+tcp,2463,symbios raid
+tcp,2464,direcpc si
+tcp,2465,load balance management
+tcp,2466,load balance forwarding
+tcp,2467,high criteria
+tcp,2468,qip_msgd
+tcp,2469,mti-tcs-comm
+tcp,2470,taskman port
+tcp,2471,seaodbc
+tcp,2472,c3
+tcp,2473,aker-cdp
+tcp,2474,vital analysis
+tcp,2475,ace server
+tcp,2476,ace server propagation
+tcp,2477,secursight certificate valifation service
+tcp,2478,secursight authentication server (sll)
+tcp,2479,secursight event logging server (ssl)
+tcp,2480,lingwood's detail
+tcp,2481,oracle giop
+tcp,2482,oracle giop ssl
+tcp,2483,oracle ttc
+tcp,2484,oracle ttc ssl
+tcp,2485,net objects1
+tcp,2486,net objects2
+tcp,2487,policy notice service
+tcp,2488,moy corporation
+tcp,2489,tsilb
+tcp,2490,qip_qdhcp
+tcp,2491,conclave cpp
+tcp,2492,groove
+tcp,2493,talarian mqs
+tcp,2494,bmc ar
+tcp,2495,fast remote services
+tcp,2496,dirgis
+tcp,2497,quad db
+tcp,2498,odn-castraq
+tcp,2499,unicontrol
+tcp,2500,resource tracking system server
+tcp,2501,resource tracking system client
+tcp,2502,kentrox protocol
+tcp,2503,nms-dpnss
+tcp,2504,wlbs
+tcp,2505,torque-traffic
+tcp,2506,jbroker
+tcp,2507,spock
+tcp,2508,jdatastore
+tcp,2509,fjmpss
+tcp,2510,fjappmgrbulk
+tcp,2511,metastorm
+tcp,2512,citrix ima
+tcp,2513,citrix admin
+tcp,2514,facsys ntp
+tcp,2515,facsys router
+tcp,2516,main control
+tcp,2517,h.323 annex e call signaling transport
+tcp,2518,willy
+tcp,2519,globmsgsvc
+tcp,2520,pvsw
+tcp,2521,adaptec manager
+tcp,2522,windb
+tcp,2523,qke llc v.3
+tcp,2524,optiwave license management
+tcp,2525,ms v-worlds
+tcp,2526,ema license manager
+tcp,2527,iq server
+tcp,2528,ncr ccl
+tcp,2529,uts ftp
+tcp,2530,vr commerce
+tcp,2531,ito-e gui
+tcp,2532,ovtopmd
+tcp,2533,snifferserver
+tcp,2534,combox web access
+tcp,2535,w32.beagle trojan / madcap
+tcp,2536,btpp2audctr1
+tcp,2537,upgrade protocol
+tcp,2538,vnwk-prapi
+tcp,2539,vsi admin
+tcp,2540,lonworks
+tcp,2541,lonworks2
+tcp,2542,davinci
+tcp,2543,reftek
+tcp,2544,novell zen
+tcp,2545,sis-emt
+tcp,2546,vytalvaultbrtp
+tcp,2547,vytalvaultvsmp
+tcp,2548,vytalvaultpipe
+tcp,2549,ipass
+tcp,2550,ads
+tcp,2551,isg uda server
+tcp,2552,call logging
+tcp,2553,efidiningport
+tcp,2554,vcnet-link v10
+tcp,2555,compaq wcp
+tcp,2556,w32.beagle.n trojan / madcap / nicetec-nmsvc
+tcp,2557,nicetec-mgmt
+tcp,2558,pcle multi media
+tcp,2559,lstp
+tcp,2560,labrat
+tcp,2561,mosaixcc
+tcp,2562,delibo
+tcp,2563,cti redwood
+tcp,2564,hp 3000 ns/vt block mode telnet
+tcp,2565,coordinator server
+tcp,2566,pcs-pcw
+tcp,2567,cisco line protocol
+tcp,2568,spam trap
+tcp,2569,sonus call signal
+tcp,2570,hs port
+tcp,2571,cecsvc
+tcp,2572,ibp
+tcp,2573,trust establish
+tcp,2574,blockade bpsp
+tcp,2575,hl7
+tcp,2576,tcl pro debugger
+tcp,2577,scriptics lsrvr
+tcp,2578,rvs isdn dcp
+tcp,2579,mpfoncl
+tcp,2580,tributary
+tcp,2581,argis te
+tcp,2582,argis ds
+tcp,2583,mon / wincrash2
+tcp,2584,cyaserv
+tcp,2585,netx server
+tcp,2586,netx agent
+tcp,2587,masc
+tcp,2588,privilege
+tcp,2589,quartus tcl
+tcp,2590,idotdist
+tcp,2591,maytag shuffle
+tcp,2592,netrek
+tcp,2593,mns mail notice service
+tcp,2594,data base server
+tcp,2595,world fusion 1
+tcp,2596,world fusion 2
+tcp,2597,homestead glory
+tcp,2598,citrix ma client
+tcp,2599,meridian data
+tcp,2600,hpstgmgr
+tcp,2601,discp client
+tcp,2602,discp server
+tcp,2603,service meter
+tcp,2604,nsc ccs
+tcp,2605,nsc posa
+tcp,2606,dell netmon
+tcp,2607,dell connection
+tcp,2608,wag service
+tcp,2609,system monitor
+tcp,2610,versatek
+tcp,2611,lionhead
+tcp,2612,qpasa agent
+tcp,2613,smntubootstrap
+tcp,2614,never offline
+tcp,2615,firepower
+tcp,2616,appswitch-emp
+tcp,2617,clinical context managers
+tcp,2618,priority e-com
+tcp,2619,bruce
+tcp,2620,lpsrecommender
+tcp,2621,miles apart jukebox server
+tcp,2622,metricadbc
+tcp,2623,lmdp
+tcp,2624,aria
+tcp,2625,blwnkl port
+tcp,2626,gbjd816
+tcp,2627,moshe beeri
+tcp,2628,dict
+tcp,2629,sitara server
+tcp,2630,sitara management
+tcp,2631,sitara dir
+tcp,2632,irdg post
+tcp,2633,interintelli
+tcp,2634,pk electronics
+tcp,2635,back burner
+tcp,2636,solve
+tcp,2637,import document service
+tcp,2638,sybase anywhere
+tcp,2639,aminet
+tcp,2640,sabbagh associates licence manager
+tcp,2641,hdl server
+tcp,2642,tragic
+tcp,2643,gte-samp
+tcp,2644,travsoft ipx tunnel
+tcp,2645,novell ipx cmd
+tcp,2646,and licence manager
+tcp,2647,syncserver
+tcp,2648,upsnotifyprot
+tcp,2649,vpsipport
+tcp,2650,eristwoguns
+tcp,2651,ebinsite
+tcp,2652,interpathpanel
+tcp,2653,sonus
+tcp,2654,corel vnc admin
+tcp,2655,unix nt glue
+tcp,2656,kana
+tcp,2657,sns dispatcher
+tcp,2658,sns admin
+tcp,2659,sns query
+tcp,2660,gc monitor
+tcp,2661,olhost
+tcp,2662,bintec-capi
+tcp,2663,bintec-tapi
+tcp,2664,command mq gm
+tcp,2665,command mq pm
+tcp,2666,extensis
+tcp,2667,alarm clock server
+tcp,2668,alarm clock client
+tcp,2669,toad
+tcp,2670,tve announce
+tcp,2671,newlixreg
+tcp,2672,nhserver
+tcp,2673,first call 42
+tcp,2674,ewnn
+tcp,2675,ttc etap
+tcp,2676,simslink
+tcp,2677,gadget gate 1 way
+tcp,2678,gadget gate 2 way
+tcp,2679,sync server ssl
+tcp,2680,pxc-sapxom
+tcp,2681,mpnjsomb
+tcp,2682,srsp
+tcp,2683,ncdloadbalance
+tcp,2684,mpnjsosv
+tcp,2685,mpnjsocl
+tcp,2686,mpnjsomg
+tcp,2687,pq-lic-mgmt
+tcp,2688,md-cf-http
+tcp,2689,fastlynx
+tcp,2690,hp nnm embedded database
+tcp,2691,it internet
+tcp,2692,admins lms
+tcp,2693,belarc-http
+tcp,2694,pwrsevent
+tcp,2695,vspread
+tcp,2696,unify admin
+tcp,2697,oce snmp trap port
+tcp,2698,mck-ivpip
+tcp,2699,csoft plus client
+tcp,2700,tqdata
+tcp,2701,sms remote control (control)
+tcp,2702,sms remote control (data)
+tcp,2703,sms remote control (chat)
+tcp,2704,sms remote file transfer
+tcp,2705,sds admin
+tcp,2706,ncd mirroring
+tcp,2707,emcsymapiport
+tcp,2708,banyan-net
+tcp,2709,supermon
+tcp,2710,sso service
+tcp,2711,sso control
+tcp,2712,axapta object communication protocol
+tcp,2713,raven1
+tcp,2714,raven2
+tcp,2715,hpstgmgr2
+tcp,2716,inova ip disco
+tcp,2717,pn requester
+tcp,2718,pn requester 2
+tcp,2719,scan & change
+tcp,2720,wkars
+tcp,2721,smart diagnose
+tcp,2722,proactive server
+tcp,2723,watchdog nt
+tcp,2724,qotps
+tcp,2725,sql analysis services / msolap ptp2
+tcp,2726,tams
+tcp,2727,media gateway control protocol call agent
+tcp,2728,sqdr
+tcp,2729,tcim control
+tcp,2730,nec raidplus
+tcp,2731,netdragon messanger
+tcp,2732,g5m
+tcp,2733,signet ctf
+tcp,2734,ccs software
+tcp,2735,monitor console
+tcp,2736,radwiz nms srv
+tcp,2737,srp feedback
+tcp,2738,ndl tcp-osi gateway
+tcp,2739,tn timing
+tcp,2740,alarm
+tcp,2741,tsb
+tcp,2742,tsb2
+tcp,2743,murx
+tcp,2744,honyaku
+tcp,2745,w32.beagle.c trojan) / urbisnet
+tcp,2746,cpudpencap
+tcp,2747,yk.fujitsu.co.jp
+tcp,2748,yk.fujitsu.co.jp
+tcp,2749,yk.fujitsu.co.jp
+tcp,2750,yk.fujitsu.co.jp
+tcp,2751,yk.fujitsu.co.jp
+tcp,2752,rsisys access
+tcp,2753,de-spot
+tcp,2754,apollo cc
+tcp,2755,express pay
+tcp,2756,simplement-tie
+tcp,2757,cnrp
+tcp,2758,apollo status
+tcp,2759,apollo gms
+tcp,2760,saba ms
+tcp,2761,dicom iscl
+tcp,2762,dicom tls
+tcp,2763,desktop dna
+tcp,2764,data insurance
+tcp,2765,qip-audup
+tcp,2766,compaq scp
+tcp,2767,uadtc
+tcp,2768,uacs
+tcp,2769,single point mvs
+tcp,2770,veronica
+tcp,2771,vergence cm
+tcp,2772,auris
+tcp,2773,pc backup
+tcp,2774,pc backup
+tcp,2775,smmp
+tcp,2776,ridgeway systems & software
+tcp,2777,ridgeway systems & software
+tcp,2778,gwen-sonya
+tcp,2779,lbc sync
+tcp,2780,lbc control
+tcp,2781,whosells
+tcp,2782,everydayrc
+tcp,2783,aises
+tcp,2784,world wide web - development
+tcp,2785,aic-np
+tcp,2786,aic-oncrpc - destiny mcd database
+tcp,2787,piccolo - cornerstone software
+tcp,2788,netware loadable module - seagate software
+tcp,2789,media agent
+tcp,2790,plg proxy
+tcp,2791,mt port registrator
+tcp,2792,f5-globalsite
+tcp,2793,initlsmsad
+tcp,2794,aaftp
+tcp,2795,livestats
+tcp,2796,ac-tech
+tcp,2797,esp-encap
+tcp,2798,tmesis-upshot
+tcp,2799,icon discover
+tcp,2800,acc raid
+tcp,2801,igcp
+tcp,2802,veritas tcp1
+tcp,2803,btprjctrl
+tcp,2804,telexis vtu
+tcp,2805,wta wsp-s
+tcp,2806,cspuni
+tcp,2807,cspmulti
+tcp,2808,j-lan-p
+tcp,2809,corba loc
+tcp,2810,active net steward
+tcp,2811,gsi ftp
+tcp,2812,atmtcp
+tcp,2813,llm-pass
+tcp,2814,llm-csv
+tcp,2815,lbc measurement
+tcp,2816,lbc watchdog
+tcp,2817,nmsig port
+tcp,2818,rmlnk
+tcp,2819,fc fault notification
+tcp,2820,univision
+tcp,2821,vml_dms
+tcp,2822,ka0wuc
+tcp,2823,cqg net/lan
+tcp,2826,slc systemlog
+tcp,2827,slc ctrlrloops
+tcp,2828,itm license manager
+tcp,2829,silkp1
+tcp,2830,silkp2
+tcp,2831,silkp3
+tcp,2832,silkp4
+tcp,2833,glishd
+tcp,2834,evtp
+tcp,2835,evtp-data
+tcp,2836,catalyst
+tcp,2837,repliweb
+tcp,2838,starbot
+tcp,2839,nmsigport
+tcp,2840,l3-exprt
+tcp,2841,l3-ranger
+tcp,2842,l3-hawk
+tcp,2843,pdnet
+tcp,2844,bpcp poll
+tcp,2845,bpcp trap
+tcp,2846,aimpp hello
+tcp,2847,aimpp port req
+tcp,2848,amt-blc-port
+tcp,2849,fxp
+tcp,2850,metaconsole
+tcp,2851,webemshttp
+tcp,2852,bears-01
+tcp,2853,ispipes
+tcp,2854,infomover
+tcp,2856,cesdinv
+tcp,2857,simctip
+tcp,2858,ecnp
+tcp,2859,active memory
+tcp,2860,dialpad voice 1
+tcp,2861,dialpad voice 2
+tcp,2862,ttg protocol
+tcp,2863,sonar data
+tcp,2864,main 5001 cmd
+tcp,2865,pit-vpn
+tcp,2866,lwlistener
+tcp,2867,esps-portal
+tcp,2868,npep messaging
+tcp,2869,ssdp event notification / icslap
+tcp,2870,daishi
+tcp,2871,msi select play
+tcp,2872,contract
+tcp,2873,paspar2 zoomin
+tcp,2874,dxmessagebase1
+tcp,2875,dxmessagebase2
+tcp,2876,sps tunnel
+tcp,2877,bluelance
+tcp,2878,aap
+tcp,2879,ucentric-ds
+tcp,2880,synapse
+tcp,2881,ndsp
+tcp,2882,ndtp
+tcp,2883,ndnp
+tcp,2884,flash msg
+tcp,2885,topflow
+tcp,2886,responselogic
+tcp,2887,aironet
+tcp,2888,spcsdlobby
+tcp,2889,rsom
+tcp,2890,cspclmulti
+tcp,2891,cinegrfx-elmd license manager
+tcp,2892,snifferdata
+tcp,2893,vseconnector
+tcp,2894,abacus-remote
+tcp,2895,natus link
+tcp,2896,ecovisiong6-1
+tcp,2897,citrix rtmp
+tcp,2898,appliance-cfg
+tcp,2899,case.nm.fujitsu.co.jp
+tcp,2900,magisoft.com
+tcp,2901,allstorcns
+tcp,2902,net aspi
+tcp,2903,suitcase
+tcp,2904,m2ua
+tcp,2905,m3ua
+tcp,2906,caller9
+tcp,2907,webmethods b2b
+tcp,2908,mao
+tcp,2909,funk dialout
+tcp,2910,tdaccess
+tcp,2911,blockade
+tcp,2912,epicon
+tcp,2913,booster ware
+tcp,2914,game lobby
+tcp,2915,tk socket
+tcp,2916,elvin server
+tcp,2917,elvin client
+tcp,2918,kasten chase pad
+tcp,2919,roboer
+tcp,2920,roboeda
+tcp,2921,cesd contents delivery management
+tcp,2922,cesd contents delivery data transfer
+tcp,2923,wta-wsp-wtp-s
+tcp,2924,precise-vip
+tcp,2925,firewall redundancy protocol
+tcp,2926,mobile-file-dl
+tcp,2927,unimobilectrl
+tcp,2928,redstone-cpss
+tcp,2929,panja-webadmin
+tcp,2930,panja-weblinx
+tcp,2931,circle-x
+tcp,2932,incp
+tcp,2933,4-tier opm gw
+tcp,2934,4-tier opm cli
+tcp,2935,qtp
+tcp,2936,otpatch
+tcp,2937,pnaconsult-lm
+tcp,2938,sm-pas-1
+tcp,2939,sm-pas-2
+tcp,2940,sm-pas-3
+tcp,2941,sm-pas-4
+tcp,2942,sm-pas-5
+tcp,2943,ttnrepository
+tcp,2944,megaco h-248
+tcp,2945,h248 binary
+tcp,2946,fjsvmpor
+tcp,2947,gpsd
+tcp,2948,wap push
+tcp,2949,wap push secure
+tcp,2950,esip
+tcp,2951,ottp
+tcp,2952,mpfwsas
+tcp,2953,ovalarmsrv
+tcp,2954,ovalarmsrv-cmd
+tcp,2955,csnotify
+tcp,2956,ovrimosdbman
+tcp,2957,jamct5
+tcp,2958,jamct6
+tcp,2959,rmopagt
+tcp,2960,dfoxserver
+tcp,2961,boldsoft-lm
+tcp,2962,iph-policy-cli
+tcp,2963,iph-policy-adm
+tcp,2964,bullant srap
+tcp,2965,bullant rap
+tcp,2966,idp-infotrieve
+tcp,2967,ssc-agent
+tcp,2968,enpp
+tcp,2969,upnp / essp
+tcp,2970,index-net
+tcp,2971,net clip
+tcp,2972,pmsm webrctl
+tcp,2973,sv networks
+tcp,2974,signal
+tcp,2975,fujitsu configuration management service
+tcp,2976,cns server port
+tcp,2977,ttcs enterprise test access protocol - ns
+tcp,2978,ttcs enterprise test access protocol - ds
+tcp,2979,h.263 video streaming
+tcp,2980,instant messaging service
+tcp,2981,mylxamport
+tcp,2982,iwb-whiteboard
+tcp,2983,netplan
+tcp,2984,hpidsadmin
+tcp,2985,hpidsagent
+tcp,2986,stonefalls
+tcp,2987,identify
+tcp,2988,classify
+tcp,2989,zarkov
+tcp,2990,boscap
+tcp,2991,wkstn-mon
+tcp,2992,itb301
+tcp,2993,veritas vis1
+tcp,2994,veritas vis2
+tcp,2995,idrs
+tcp,2996,vsixml
+tcp,2997,rebol
+tcp,2998,real secure
+tcp,2999,remoteware unassigned
+tcp,3000,remoteware client
+tcp,3001,phatbot worm / redwood broker
+tcp,3002,remoteware server
+tcp,3003,cgms
+tcp,3004,csoft agent
+tcp,3005,genius license manager
+tcp,3006,instant internet admin
+tcp,3007,lotus mail tracking agent protocol
+tcp,3008,midnight technologies
+tcp,3009,pxc-ntfy
+tcp,3010,telerate workstation
+tcp,3011,trusted web
+tcp,3012,trusted web client
+tcp,3013,gilat sky surfer
+tcp,3014,broker service
+tcp,3015,nati dstp
+tcp,3016,notify server
+tcp,3017,event listener
+tcp,3018,service registry
+tcp,3019,resource manager
+tcp,3020,cifs
+tcp,3021,agri server
+tcp,3022,csregagent
+tcp,3023,magicnotes
+tcp,3024,nds_sso
+tcp,3025,arepa raft
+tcp,3026,agri gateway
+tcp,3027,liebdevmgmt_c
+tcp,3028,liebdevmgmt_dm
+tcp,3029,liebdevmgmt_a
+tcp,3030,arepa cas
+tcp,3031,agentvu
+tcp,3032,redwood chat
+tcp,3033,pdb
+tcp,3034,osmosis aeea
+tcp,3035,fjsv gssagt
+tcp,3036,hagel dump
+tcp,3037,hp san mgmt
+tcp,3038,santak ups
+tcp,3039,cogitate inc.
+tcp,3040,tomato springs
+tcp,3041,di-traceware
+tcp,3042,journee
+tcp,3043,brp
+tcp,3045,responsenet
+tcp,3046,di-ase
+tcp,3047,fast security hl server
+tcp,3048,sierra net pc trader
+tcp,3049,nsws
+tcp,3050,gds_db
+tcp,3051,galaxy server
+tcp,3052,apcpcns
+tcp,3053,dsom-server
+tcp,3054,amt cnf prot
+tcp,3055,policy server
+tcp,3056,cdl server
+tcp,3057,goahead fldup
+tcp,3058,videobeans
+tcp,3059,qsoft
+tcp,3060,interserver
+tcp,3061,cautcpd
+tcp,3062,ncacn-ip-tcp
+tcp,3063,ncadg-ip-udp
+tcp,3065,slinterbase
+tcp,3066,netattachsdmp
+tcp,3067,w32.korgo worm / fjhpjp
+tcp,3068,ls3 broadcast
+tcp,3069,ls3
+tcp,3070,mgxswitch
+tcp,3075,orbix 2000 locator
+tcp,3076,orbix 2000 config
+tcp,3077,orbix 2000 locator ssl
+tcp,3078,orbix 2000 locator ssl
+tcp,3079,lv front panel
+tcp,3080,stm_pproc
+tcp,3081,tl1-lv
+tcp,3082,tl1-raw
+tcp,3083,tl1-telnet
+tcp,3084,itm-mccs
+tcp,3085,pcihreq
+tcp,3086,jdl-dbkitchen
+tcp,3105,cardbox
+tcp,3106,cardbox http
+tcp,3127,w32.mydoom.a virus
+tcp,3128,squid http proxy / w32.mydoom.b virus
+tcp,3129,master's paradise (windows trojan)
+tcp,3130,icpv2
+tcp,3131,net book mark
+tcp,3141,vmodem
+tcp,3142,rdc wh eos
+tcp,3143,sea view
+tcp,3144,tarantella
+tcp,3145,csi-lfap
+tcp,3147,rfio
+tcp,3148,netmike game administrator
+tcp,3149,netmike game server
+tcp,3150,netmike assessor administrator
+tcp,3151,netmike assessor
+tcp,3180,millicent broker server
+tcp,3181,bmc patrol agent
+tcp,3182,bmc patrol rendezvous
+tcp,3262,necp
+tcp,3264,cc:mail/lotus
+tcp,3265,altav tunnel
+tcp,3266,ns cfg server
+tcp,3267,ibm dial out
+tcp,3268,microsoft global catalog
+tcp,3269,microsoft global catalog with ldap/ssl
+tcp,3270,verismart
+tcp,3271,csoft prev port
+tcp,3272,fujitsu user manager
+tcp,3273,simple extensible multiplexed protocol
+tcp,3274,ordinox server
+tcp,3275,samd
+tcp,3276,maxim asics
+tcp,3277,awg proxy
+tcp,3278,lkcm server
+tcp,3279,admind
+tcp,3280,vs server
+tcp,3281,sysopt
+tcp,3282,datusorb
+tcp,3283,net assistant
+tcp,3284,4talk
+tcp,3285,plato
+tcp,3286,e-net
+tcp,3287,directvdata
+tcp,3288,cops
+tcp,3289,enpc
+tcp,3290,caps logistics toolkit - lm
+tcp,3291,s a holditch & associates - lm
+tcp,3292,cart o rama
+tcp,3293,fg-fps
+tcp,3294,fg-gip
+tcp,3295,dynamic ip lookup
+tcp,3296,rib license manager
+tcp,3297,cytel license manager
+tcp,3298,transview
+tcp,3299,pdrncs
+tcp,3300,bmc-patrol-agent
+tcp,3301,unathorised use by sap r/3
+tcp,3302,mcs fastmail
+tcp,3303,op session client
+tcp,3304,op session server
+tcp,3305,odette-ftp
+tcp,3306,mysql
+tcp,3307,op session proxy
+tcp,3308,tns server
+tcp,3309,tns adv
+tcp,3310,dyna access
+tcp,3311,mcns tel ret
+tcp,3312,application management server
+tcp,3313,unify object broker
+tcp,3314,unify object host
+tcp,3315,cdid
+tcp,3316,aicc/cmi
+tcp,3317,vsai port
+tcp,3318,swith to swith routing information protocol
+tcp,3319,sdt license manager
+tcp,3320,office link 2000
+tcp,3321,vnsstr
+tcp,3325,isi.edu
+tcp,3326,sftu
+tcp,3327,bbars
+tcp,3328,eaglepoint license manager
+tcp,3329,hp device disc
+tcp,3330,mcs calypso icf
+tcp,3331,mcs messaging
+tcp,3332,mcs mail server
+tcp,3333,dec notes
+tcp,3334,direct tv webcasting
+tcp,3335,direct tv software updates
+tcp,3336,direct tv tickers
+tcp,3337,direct tv data catalog
+tcp,3338,omf data b
+tcp,3339,omf data l
+tcp,3340,omf data m
+tcp,3341,omf data h
+tcp,3342,webtie
+tcp,3343,ms cluster net
+tcp,3344,bnt manager
+tcp,3345,influence
+tcp,3346,trnsprnt proxy
+tcp,3347,phoenix rpc
+tcp,3348,pangolin laser
+tcp,3349,chevin services
+tcp,3350,findviatv
+tcp,3351,btrieve
+tcp,3352,ssql
+tcp,3353,fatpipe
+tcp,3354,suitjd
+tcp,3355,hogle (proxy backdoor) / ordinox dbase
+tcp,3356,upnotifyps
+tcp,3357,adtech test ip
+tcp,3358,mp sys rmsvr
+tcp,3359,wg netforce
+tcp,3360,kv server
+tcp,3361,kv agent
+tcp,3362,dj ilm
+tcp,3363,nati vi server
+tcp,3364,creative server
+tcp,3365,content server
+tcp,3366,creative partner
+tcp,3371,ccm.jf.intel.com
+tcp,3372,microsoft distributed transaction coordinator (msdtc) / tip 2
+tcp,3373,lavenir license manager
+tcp,3374,cluster disc
+tcp,3375,vsnm agent
+tcp,3376,cd broker
+tcp,3377,cogsys network license manager
+tcp,3378,wsicopy
+tcp,3379,socorfs
+tcp,3380,sns channels
+tcp,3381,geneous
+tcp,3382,fujitsu network enhanced antitheft function
+tcp,3383,enterprise software products license manager
+tcp,3384,cluster management services
+tcp,3385,qnxnetman
+tcp,3386,gprs data
+tcp,3387,back room net
+tcp,3388,cb server
+tcp,3389,ms terminal server
+tcp,3390,distributed service coordinator
+tcp,3391,savant
+tcp,3392,efi license management
+tcp,3393,d2k tapestry client to server
+tcp,3394,d2k tapestry server to server
+tcp,3395,dyna license manager (elam)
+tcp,3396,printer agent
+tcp,3397,cloanto license manager
+tcp,3398,mercantile
+tcp,3399,csms
+tcp,3400,csms2
+tcp,3401,filecast
+tcp,3410,backdoor.optixpro.13
+tcp,3421,bull apprise portmapper
+tcp,3454,apple remote access protocol
+tcp,3455,rsvp port
+tcp,3456,vat default data
+tcp,3457,vat default control
+tcp,3458,d3winosfi
+tcp,3459,tip integral
+tcp,3460,edm manger
+tcp,3461,edm stager
+tcp,3462,edm std notify
+tcp,3463,edm adm notify
+tcp,3464,edm mgr sync
+tcp,3465,edm mgr cntrl
+tcp,3466,workflow
+tcp,3467,rcst
+tcp,3468,ttcm remote controll
+tcp,3469,pluribus
+tcp,3470,jt400
+tcp,3471,jt400-ssl
+tcp,3535,ms-la
+tcp,3563,watcom debug
+tcp,3572,harlequin.co.uk
+tcp,3672,harlequinorb
+tcp,3689,apple digital audio access protocol
+tcp,3802,vhd
+tcp,3845,v-one single port proxy
+tcp,3862,giga-pocket
+tcp,3875,pnbscada
+tcp,3900,unidata udt os
+tcp,3984,mapper network node manager
+tcp,3985,mapper tcp/ip server
+tcp,3986,mapper workstation server
+tcp,3987,centerline
+tcp,4000,terabase
+tcp,4001,cisco mgmt / newoak
+tcp,4002,pxc-spvr-ft
+tcp,4003,pxc-splr-ft
+tcp,4004,pxc-roid
+tcp,4005,pxc-pin
+tcp,4006,pxc-spvr
+tcp,4007,pxc-splr
+tcp,4008,netcheque accounting
+tcp,4009,chimera hwm
+tcp,4010,samsung unidex
+tcp,4011,alternate service boot
+tcp,4012,pda gate
+tcp,4013,acl manager
+tcp,4014,taiclock
+tcp,4015,talarian mcast
+tcp,4016,talarian mcast
+tcp,4017,talarian mcast
+tcp,4018,talarian mcast
+tcp,4019,talarian mcast
+tcp,4045,nfs-lockd
+tcp,4096,bre (bridge relay element)
+tcp,4097,patrol view
+tcp,4098,drmsfsd
+tcp,4099,dpcp
+tcp,4132,nuts daemon
+tcp,4133,nuts bootp server
+tcp,4134,nifty-serve hmi protocol
+tcp,4141,workflow server
+tcp,4142,document server
+tcp,4143,document replication
+tcp,4144,compuserve pc windows
+tcp,4160,jini discovery
+tcp,4199,eims admin
+tcp,4299,earth.path.net
+tcp,4300,corel ccam
+tcp,4321,remote who is
+tcp,4333,mini-sql server
+tcp,4343,unicall
+tcp,4344,vinainstall
+tcp,4345,macro 4 network as
+tcp,4346,elan lm
+tcp,4347,lan surveyor
+tcp,4348,itose
+tcp,4349,file system port map
+tcp,4350,net device
+tcp,4351,plcy net services
+tcp,4353,f5 iquery
+tcp,4397,phatbot worm
+tcp,4442,saris
+tcp,4443,pharos
+tcp,4444,adsubtract / nv video default
+tcp,4445,upnotifyp
+tcp,4446,n1-fwp
+tcp,4447,n1-rmgmt
+tcp,4448,asc licence manager
+tcp,4449,privatewire
+tcp,4450,camp
+tcp,4451,cti system msg
+tcp,4452,cti program load
+tcp,4453,nss alert manager
+tcp,4454,nss agent manager
+tcp,4455,pr chat user
+tcp,4456,pr chat server
+tcp,4457,pr register
+tcp,4500,sae-urn
+tcp,4501,urn-x-cdchoice
+tcp,4545,worldscores
+tcp,4546,sf license manager (sentinel)
+tcp,4547,lanner license manager
+tcp,4557,fax transmission service
+tcp,4559,hylafax client-service protocol
+tcp,4567,tram
+tcp,4568,bmc reporting
+tcp,4600,piranha1
+tcp,4601,piranha2
+tcp,4661,edonkey2k
+tcp,4662,edonkey2k
+tcp,4663,edonkey
+tcp,4665,edonkey2k
+tcp,4672,remote file access server
+tcp,4675,emule
+tcp,4711,emule
+tcp,4751,w32.beagle.v trojan
+tcp,4772,emule
+tcp,4800,icona instant messenging system
+tcp,4801,icona web embedded chat
+tcp,4802,icona license system server
+tcp,4820,backdoor.tuxter
+tcp,4827,htcp
+tcp,4837,varadero-0
+tcp,4838,varadero-1
+tcp,4868,photon relay
+tcp,4869,photon relay debug
+tcp,4885,abbs
+tcp,4899,radmin win32 remote control
+tcp,4983,at&t intercom
+tcp,5000,upnp / filmaker.com / socket de troie (windows trojan)
+tcp,5001,filmaker.com / socket de troie (windows trojan)
+tcp,5002,radio free ethernet
+tcp,5003,filemaker inc. - proprietary transport
+tcp,5004,avt-profile-1
+tcp,5005,avt-profile-2
+tcp,5006,wsm server
+tcp,5007,wsm server ssl
+tcp,5010,telepathstart
+tcp,5011,telepathattack
+tcp,5020,zenginkyo-1
+tcp,5021,zenginkyo-2
+tcp,5042,asnaacceler8db
+tcp,5050,yahoo messenger / multimedia conference control tool
+tcp,5051,ita agent
+tcp,5052,ita manager
+tcp,5055,unot
+tcp,5060,sip
+tcp,5069,i/net 2000-npr
+tcp,5071,powerschool
+tcp,5093,sentinel lm
+tcp,5099,sentlm srv2srv
+tcp,5101,yahoo! messenger
+tcp,5145,rmonitor secure
+tcp,5150,ascend tunnel management protocol
+tcp,5151,esri sde instance
+tcp,5152,esri sde instance discovery
+tcp,5165,ife_1corp
+tcp,5190,america-online
+tcp,5191,americaonline1
+tcp,5192,americaonline2
+tcp,5193,americaonline3
+tcp,5200,targus aib 1
+tcp,5201,targus aib 2
+tcp,5202,targus tnts 1
+tcp,5203,targus tnts 2
+tcp,5222,jabber server
+tcp,5232,sgi distribution graphics
+tcp,5236,padl2sim
+tcp,5272,pk
+tcp,5300,ha cluster heartbeat
+tcp,5301,ha cluster general services
+tcp,5302,ha cluster configuration
+tcp,5303,ha cluster probing
+tcp,5304,ha cluster commands
+tcp,5305,ha cluster test
+tcp,5306,sun mc group
+tcp,5307,sco aip
+tcp,5308,cfengine
+tcp,5309,j printer
+tcp,5310,outlaws
+tcp,5311,tm login
+tcp,5373,w32.gluber.b@mm
+tcp,5400,excerpt search / blade runner (windows trojan)
+tcp,5401,excerpt search secure / blade runner (windows trojan)
+tcp,5402,mftp / blade runner (windows trojan)
+tcp,5403,hpoms-ci-lstn
+tcp,5404,hpoms-dps-lstn
+tcp,5405,netsupport
+tcp,5406,systemics sox
+tcp,5407,foresyte-clear
+tcp,5408,foresyte-sec
+tcp,5409,salient data server
+tcp,5410,salient user manager
+tcp,5411,actnet
+tcp,5412,continuus
+tcp,5413,wwiotalk
+tcp,5414,statusd
+tcp,5415,ns server
+tcp,5416,sns gateway
+tcp,5417,sns agent
+tcp,5418,mcntp
+tcp,5419,dj-ice
+tcp,5420,cylink-c
+tcp,5421,net support 2
+tcp,5422,salient mux
+tcp,5423,virtualuser
+tcp,5426,devbasic
+tcp,5427,sco-peer-tta
+tcp,5428,telaconsole
+tcp,5429,billing and accounting system exchange
+tcp,5430,radec corp
+tcp,5431,park agent
+tcp,5432,postgres database server
+tcp,5435,data tunneling transceiver linking (dttl)
+tcp,5454,apc-tcp-udp-4
+tcp,5455,apc-tcp-udp-5
+tcp,5456,apc-tcp-udp-6
+tcp,5461,silkmeter
+tcp,5462,ttl publisher
+tcp,5465,netops-broker
+tcp,5490,squid http proxy
+tcp,5500,fcp-addr-srvr1
+tcp,5501,fcp-addr-srvr2
+tcp,5502,fcp-srvr-inst1
+tcp,5503,fcp-srvr-inst2
+tcp,5504,fcp-cics-gw1
+tcp,5510,ace/server services
+tcp,5520,ace/server services
+tcp,5530,ace/server services
+tcp,5540,ace/server services
+tcp,5550,ace/server services / xtcp 2.0x
+tcp,5554,sasser worm ftp backdoor / sgi esp http
+tcp,5555,personal agent / w32.mimail.p@mm
+tcp,5556,mtbd (mtb backup)
+tcp,5559,enterprise security remote install axent.com
+tcp,5599,enterprise security remote install
+tcp,5600,enterprise security manager
+tcp,5601,enterprise security agent
+tcp,5602,a1-msc
+tcp,5603,a1-bs
+tcp,5604,a3-sdunode
+tcp,5605,a4-sdunode
+tcp,5631,pcanywheredata
+tcp,5632,pcanywherestat
+tcp,5678,linksys etherfast router remote administration / remote replication agent connection
+tcp,5679,direct cable connect manager
+tcp,5680,canna (japanese input)
+tcp,5713,proshare conf audio
+tcp,5714,proshare conf video
+tcp,5715,proshare conf data
+tcp,5716,proshare conf request
+tcp,5717,proshare conf notify
+tcp,5729,openmail user agent layer
+tcp,5741,ida discover port 1
+tcp,5742,ida discover port 2 / wincrash (windows trojan)
+tcp,5745,fcopy-server
+tcp,5746,fcopys-server
+tcp,5755,openmail desk gateway server
+tcp,5757,openmail x.500 directory server
+tcp,5766,openmail newmail server
+tcp,5767,openmail suer agent layer (secure)
+tcp,5768,openmail cmts server
+tcp,5771,netagent
+tcp,5800,vnc virtual network computing
+tcp,5801,vnc virtual network computing
+tcp,5813,icmpd
+tcp,5859,wherehoo
+tcp,5882,y3k
+tcp,5900,vnc virtual network computing
+tcp,5901,vnc virtual network computing
+tcp,5968,mppolicy-v5
+tcp,5969,mppolicy-mgr
+tcp,5977,ncd preferences tcp port
+tcp,5978,ncd diagnostic tcp port
+tcp,5979,ncd configuration tcp port
+tcp,5980,vnc virtual network computing
+tcp,5981,vnc virtual network computing
+tcp,5987,solaris web enterprise management rmi
+tcp,5997,ncd preferences telnet port
+tcp,5998,ncd diagnostic telnet port
+tcp,5999,cvsup
+tcp,6000,x-windows / w32.lovegate.ak virus
+tcp,6001,cisco mgmt
+tcp,6003,half-life won server
+tcp,6063,x windows system mit.edu
+tcp,6064,ndl-ahp-svc
+tcp,6065,winpharaoh
+tcp,6066,ewctsp
+tcp,6067,srb
+tcp,6068,gsmp
+tcp,6069,trip
+tcp,6070,messageasap
+tcp,6071,ssdtp
+tcp,6072,diagnose-proc
+tcp,6073,directplay8
+tcp,6100,synchronet-db
+tcp,6101,synchronet-rtc
+tcp,6102,synchronet-upd
+tcp,6103,rets
+tcp,6104,dbdb
+tcp,6105,prima server
+tcp,6106,mps server
+tcp,6107,etc control
+tcp,6108,sercomm-scadmin
+tcp,6109,globecast-id
+tcp,6110,hp softbench cm
+tcp,6111,hp softbench sub-process control
+tcp,6112,dtspcd / blizzard battlenet
+tcp,6123,backup express
+tcp,6129,dameware
+tcp,6141,meta corporation license manager
+tcp,6142,aspen technology license manager
+tcp,6143,watershed license manager
+tcp,6144,statsci license manager - 1
+tcp,6145,statsci license manager - 2
+tcp,6146,lone wolf systems license manager
+tcp,6147,montage license manager
+tcp,6148,ricardo north america license manager
+tcp,6149,tal-pod
+tcp,6253,crip
+tcp,6321,empress software connectivity server 1
+tcp,6322,empress software connectivity server 2
+tcp,6346,gnutella/bearshare file sharing application
+tcp,6348,limewire p2p
+tcp,6389,clariion-evr01
+tcp,6400,saegatesoftware.com
+tcp,6401,saegatesoftware.com
+tcp,6402,saegatesoftware.com
+tcp,6403,saegatesoftware.com
+tcp,6404,saegatesoftware.com
+tcp,6405,saegatesoftware.com
+tcp,6406,saegatesoftware.com
+tcp,6407,saegatesoftware.com
+tcp,6408,saegatesoftware.com
+tcp,6409,saegatesoftware.com
+tcp,6410,saegatesoftware.com
+tcp,6455,skip certificate receive
+tcp,6456,skip certificate send
+tcp,6471,lvision license manager
+tcp,6500,boks master
+tcp,6501,boks servc
+tcp,6502,boks servm
+tcp,6503,boks clntd
+tcp,6505,boks admin private port
+tcp,6506,boks admin public port
+tcp,6507,boks dir server private port
+tcp,6508,boks dir server public port
+tcp,6547,apc-tcp-udp-1
+tcp,6548,apc-tcp-udp-2
+tcp,6549,apc-tcp-udp-3
+tcp,6550,fg-sysupdate
+tcp,6558,xdsxdm
+tcp,6588,analogx web proxy
+tcp,6665,internet relay chat
+tcp,6666,irc / windows media unicast service
+tcp,6667,irc
+tcp,6668,irc
+tcp,6669,irc
+tcp,6670,vocaltec global online directory / deep throat 2 (windows trojan)
+tcp,6672,vision_server
+tcp,6673,vision_elmd
+tcp,6699,napster
+tcp,6700,napster / carracho (server)
+tcp,6701,kti/icad nameserver
+tcp,6701,napster / carracho (server)
+tcp,6711,subseven (windows trojan)
+tcp,6723,ddos communication tcp
+tcp,6767,bmc perform agent
+tcp,6768,bmc perform mgrd
+tcp,6776,subseven/backdoor-g (windows trojan)
+tcp,6777,w32.beagle.a trojan
+tcp,6789,ibm db2
+tcp,6790,hnmp / ibm db2
+tcp,6831,ambit-lm
+tcp,6841,netmo default
+tcp,6842,netmo http
+tcp,6850,iccrushmore
+tcp,6881,bittorrent network
+tcp,6888,muse
+tcp,6891,ms messenger file transfer
+tcp,6901,ms messenger voice calls
+tcp,6961,jmact3
+tcp,6962,jmevt2
+tcp,6963,swismgr1
+tcp,6964,swismgr2
+tcp,6965,swistrap
+tcp,6966,swispol
+tcp,6969,acmsoda
+tcp,6998,iatp-highpri
+tcp,6999,iatp-normalpri
+tcp,7000,irc / file server itself
+tcp,7001,weblogic server / callbacks to cache managers
+tcp,7002,weblogic server (ssl) / half-life auth server / users & groups database
+tcp,7003,volume location database
+tcp,7004,afs/kerberos authentication service
+tcp,7005,volume managment server
+tcp,7006,error interpretation service
+tcp,7007,windows media services / basic overseer process
+tcp,7008,server-to-server updater
+tcp,7009,remote cache manager service
+tcp,7010,onlinet uninterruptable power supplies
+tcp,7011,talon discovery port
+tcp,7012,talon engine
+tcp,7013,microtalon discovery
+tcp,7014,microtalon communications
+tcp,7015,talon webserver
+tcp,7020,dp serve
+tcp,7021,dp serve admin
+tcp,7070,arcp
+tcp,7099,lazy-ptop
+tcp,7100,x font service
+tcp,7121,virtual prototypes license manager
+tcp,7141,vnet.ibm.com
+tcp,7161,catalyst
+tcp,7174,clutild
+tcp,7200,fodms flip
+tcp,7201,dlip
+tcp,7323,3.11 remote administration
+tcp,7326,internet citizen's band
+tcp,7390,the swiss exchange swx.ch
+tcp,7395,winqedit
+tcp,7426,openview dm postmaster manager
+tcp,7427,openview dm event agent manager
+tcp,7428,openview dm log agent manager
+tcp,7429,openview dm rqt communication
+tcp,7430,openview dm xmpv7 api pipe
+tcp,7431,openview dm ovc/xmpv3 api pipe
+tcp,7437,faximum
+tcp,7491,telops-lmd
+tcp,7511,pafec-lm
+tcp,7544,flowanalyzer displayserver
+tcp,7545,flowanalyzer utilityserver
+tcp,7566,vsi omega
+tcp,7570,aries kfinder
+tcp,7588,sun license manager
+tcp,7597,trojan worm
+tcp,7633,pmdf management
+tcp,7640,cuseeme
+tcp,7777,oracle app server / cbt
+tcp,7778,windows media services / interwise
+tcp,7781,accu-lmgr
+tcp,7786,minivend
+tcp,7932,tier 2 data resource manager
+tcp,7933,tier 2 business rules manager
+tcp,7967,supercell
+tcp,7979,micromuse-ncps
+tcp,7980,quest vista
+tcp,7999,irdmi2
+tcp,8000,http/irdmi
+tcp,8001,http/vcom tunnel
+tcp,8002,http/teradata ordbms
+tcp,8007,apache jserv protocol
+tcp,8008,http alternate
+tcp,8009,apache jserv protocol
+tcp,8010,wingate http proxy
+tcp,8032,proed
+tcp,8033,mindprint
+tcp,8080,http / http proxy
+tcp,8081,http / http proxy
+tcp,8082,blackice capture
+tcp,8129,snapstream pvs server
+tcp,8130,indigo-vrmi
+tcp,8131,indigo-vbcp
+tcp,8160,patrol
+tcp,8161,patrol snmp
+tcp,8181,ipswitch imail / monitor
+tcp,8200,trivnet
+tcp,8201,trivnet
+tcp,8204,lm perfworks
+tcp,8205,lm instmgr
+tcp,8206,lm dta
+tcp,8207,lm sserver
+tcp,8208,lm webwatcher
+tcp,8351,server find
+tcp,8376,cruise enum
+tcp,8377,cruise swroute
+tcp,8378,cruise config
+tcp,8379,cruise diags
+tcp,8380,cruise update
+tcp,8383,web email
+tcp,8400,cvd
+tcp,8401,sabarsd
+tcp,8402,abarsd
+tcp,8403,admind
+tcp,8431,micro pc-cilin
+tcp,8450,npmp
+tcp,8473,virtual point to point
+tcp,8484,ipswitch imail
+tcp,8554,rtsp alternate (see port 554)
+tcp,8733,ibus
+tcp,8763,mc-appserver
+tcp,8764,openqueue
+tcp,8765,ultraseek http
+tcp,8804,truecm
+tcp,8866,w32.beagle.b trojan
+tcp,8880,cddbp
+tcp,8888,newsedge server tcp / answerbook2
+tcp,8889,desktop data tcp 1
+tcp,8890,desktop data tcp 2
+tcp,8891,desktop data tcp 3: ness application
+tcp,8892,desktop data tcp 4: farm product
+tcp,8893,desktop data tcp 5: newsedge/web application
+tcp,8894,desktop data tcp 6: coal application
+tcp,8900,jmb-cds 1
+tcp,8901,jmb-cds 2
+tcp,8967,win32/dabber (windows worm)
+tcp,8999,firewall
+tcp,9000,cslistener
+tcp,9001,cisco-xremote
+tcp,9090,websm
+tcp,9100,hp jetdirect
+tcp,9160,netlock1
+tcp,9161,netlock2
+tcp,9162,netlock3
+tcp,9163,netlock4
+tcp,9164,netlock5
+tcp,9200,wap connectionless session service
+tcp,9201,wap session service
+tcp,9202,wap secure connectionless session service
+tcp,9203,wap secure session service
+tcp,9204,wap vcard
+tcp,9205,wap vcal
+tcp,9206,wap vcard secure
+tcp,9207,wap vcal secure
+tcp,9273,backgate (windows rootkit)
+tcp,9274,backgate (windows rootkit)
+tcp,9275,backgate (windows rootkit)
+tcp,9276,backgate (windows rootkit)
+tcp,9277,backgate (windows rootkit)
+tcp,9278,backgate (windows rootkit)
+tcp,9280,hp jetdirect embedded web server
+tcp,9290,hp jetdirect
+tcp,9291,hp jetdirect
+tcp,9292,hp jetdirect
+tcp,9321,guibase
+tcp,9343,mpidcmgr
+tcp,9344,mphlpdmc
+tcp,9374,fjdmimgr
+tcp,9396,fjinvmgr
+tcp,9397,mpidcagt
+tcp,9400,incommand
+tcp,9500,ismserver
+tcp,9535,remote man server
+tcp,9537,"remote man server, testing"
+tcp,9594,message system
+tcp,9595,ping discovery service
+tcp,9600,micromuse-ncpw
+tcp,9753,rasadv
+tcp,9876,session director
+tcp,9888,cyborg systems
+tcp,9898,monkeycom / win32/dabber (windows worm)
+tcp,9899,sctp tunneling
+tcp,9900,iua
+tcp,9909,domaintime
+tcp,9950,apcpcpluswin1
+tcp,9951,apcpcpluswin2
+tcp,9952,apcpcpluswin3
+tcp,9992,palace
+tcp,9993,palace
+tcp,9994,palace
+tcp,9995,palace
+tcp,9996,sasser worm shell / palace
+tcp,9997,palace
+tcp,9998,distinct32
+tcp,9999,distinct / win32/dabber (windows worm)
+tcp,10000,webmin / network data management protocol/ dumaru.y (windows trojan)
+tcp,10001,queue
+tcp,10002,poker
+tcp,10003,gateway
+tcp,10004,remp
+tcp,10005,secure telnet
+tcp,10007,mvs capacity
+tcp,10012,qmaster
+tcp,10080,amanda / mydoom.b (windows trojan)
+tcp,10082,amanda indexing
+tcp,10083,amanda tape indexing
+tcp,10113,netiq endpoint
+tcp,10114,netiq qcheck
+tcp,10115,ganymede endpoint
+tcp,10128,bmc-perform-service daemon
+tcp,10202,computer associate license manager
+tcp,10203,computer associate license manager
+tcp,10204,computer associate license manager
+tcp,10288,blocks
+tcp,10520,acid shivers (windows trojan)
+tcp,11000,irisa
+tcp,11001,metasys
+tcp,11111,viral computing environment (vce)
+tcp,11117,w32.beagle.l trojan / urbisnet
+tcp,11367,atm uhas
+tcp,11523,aol / adsubtract aol proxy
+tcp,11720,h323 call signal alternate
+tcp,11722,rk test
+tcp,12000,ibm enterprise extender sna xid exchange
+tcp,12001,ibm enterprise extender sna cos network priority
+tcp,12002,ibm enterprise extender sna cos high priority
+tcp,12003,ibm enterprise extender sna cos medium priority
+tcp,12004,ibm enterprise extender sna cos low priority
+tcp,12172,hivep
+tcp,12345,netbus (windows trojan)
+tcp,12346,netbus (windows trojan)
+tcp,12348,bionet (windows trojan)
+tcp,12349,bionet (windows trojan)
+tcp,12361,whack-a-mole (windows trojan)
+tcp,12362,whack-a-mole (windows trojan)
+tcp,12753,tsaf port
+tcp,12754,ddos communication tcp
+tcp,13160,i-zipqd
+tcp,13223,powwow client
+tcp,13224,powwow server
+tcp,13326,game
+tcp,13720,bprd protocol (veritas netbackup)
+tcp,13721,bpbrm protocol (veritas netbackup)
+tcp,13722,bp java msvc protocol
+tcp,13782,veritas netbackup
+tcp,13783,vopied protnocol
+tcp,13818,dsmcc config
+tcp,13819,dsmcc session messages
+tcp,13820,dsmcc pass-thru messages
+tcp,13821,dsmcc download protocol
+tcp,13822,dsmcc channel change protocol
+tcp,14001,itu sccp (ss7)
+tcp,14237,palm network hotsync
+tcp,14247,mitglieder.h trojan
+tcp,15104,ddos communication tcp
+tcp,16360,netserialext1
+tcp,16361,netserialext2
+tcp,16367,netserialext3
+tcp,16368,netserialext4
+tcp,16660,stacheldraht distributed attack tool client
+tcp,16959,subseven defcon8 2.1 backdoor remote access tool
+tcp,16991,intel-rci-mp
+tcp,17007,isode-dua
+tcp,17219,chipper
+tcp,17300,kuang2 (windows trojan)
+tcp,17569,infector
+tcp,17990,worldspan gateway
+tcp,18000,beckman instruments inc.
+tcp,18181,opsec cvp
+tcp,18182,opsec ufp
+tcp,18183,opsec sam
+tcp,18184,opsec lea
+tcp,18185,opsec omi
+tcp,18187,opsec ela
+tcp,18463,ac cluster
+tcp,18753,shaft distributed attack tool handler agent
+tcp,18888,apcnecmp
+tcp,19216,backgate (windows rootkit)
+tcp,19283,key server for sassafras
+tcp,19315,key shadow for sassafras
+tcp,19410,hp-sco
+tcp,19411,hp-sca
+tcp,19412,hp-sessmon
+tcp,19541,jcp client
+tcp,20000,dnp
+tcp,20005,xcept4 (german telekom's cept videotext service)
+tcp,20031,bakbone netvault
+tcp,20034,netbus 2 pro (windows trojan)
+tcp,20432,shaft distributed attack client
+tcp,20670,track
+tcp,20742,mitglieder.e trojan
+tcp,20999,at hand mmp
+tcp,21554,girlfriend (windows trojan)
+tcp,21590,vofr gateway
+tcp,21845,webphone
+tcp,21846,netspeak corp. directory services
+tcp,21847,netspeak corp. connection services
+tcp,21848,netspeak corp. automatic call distribution
+tcp,21849,netspeak corp. credit processing system
+tcp,22000,snapenetio
+tcp,22001,optocontrol
+tcp,22156,phatbot worm
+tcp,22273,wnn6
+tcp,22289,wnn6 (chinese input)
+tcp,22305,wnn6 (korean input)
+tcp,22321,wnn6 (taiwanese input)
+tcp,22555,vocaltec web conference
+tcp,22800,telerate information platform lan
+tcp,22951,telerate information platform wan
+tcp,23005,w32.hllw.nettrash
+tcp,23006,w32.hllw.nettrash
+tcp,23432,asylum
+tcp,23476,donald dick
+tcp,23477,donald dick
+tcp,23485,shareasa file sharing
+tcp,24000,med-ltp
+tcp,24001,med-fsp-rx
+tcp,24002,med-fsp-tx
+tcp,24003,med-supp
+tcp,24004,med-ovw
+tcp,24005,med-ci
+tcp,24006,med-net-svc
+tcp,24386,intel rci
+tcp,24554,binkp
+tcp,25000,icl-twobase1
+tcp,25001,icl-twobase2
+tcp,25002,icl-twobase3
+tcp,25003,icl-twobase4
+tcp,25004,icl-twobase5
+tcp,25005,icl-twobase6
+tcp,25006,icl-twobase7
+tcp,25007,icl-twobase8
+tcp,25008,icl-twobase9
+tcp,25009,icl-twobase10
+tcp,25555,mitglieder.d trojan
+tcp,25793,vocaltec address server
+tcp,25867,webcam32 admin
+tcp,26000,quake
+tcp,26208,wnn6-ds
+tcp,26274,delta source (windows trojan)
+tcp,27347,subseven / linux.ramen.worm (redhat linux)
+tcp,27374,subseven / linux.ramen.worm (redhat linux)
+tcp,27665,trinoo distributed attack tool master server control port
+tcp,27999,tw authentication/key distribution and
+tcp,30100,netsphere (windows trojan)
+tcp,30101,netsphere (windows trojan)
+tcp,30102,netsphere (windows trojan)
+tcp,30999,kuang
+tcp,31337,bo2k
+tcp,31785,hack-a-tack (windows trojan)
+tcp,31787,hack-a-tack (windows trojan)
+tcp,31788,hack-a-tack (windows trojan)
+tcp,31789,hack-a-tack (windows trojan)
+tcp,31791,hack-a-tack (windows trojan)
+tcp,32000,xtramail v1.11
+tcp,32768,filenet tms
+tcp,32769,filenet rpc
+tcp,32770,filenet nch
+tcp,32771,solaris rpc
+tcp,32772,solaris rpc
+tcp,32773,solaris rpc
+tcp,32774,solaris rpc
+tcp,32775,solaris rpc
+tcp,32776,solaris rpc
+tcp,32777,solaris rpc
+tcp,32780,rpc
+tcp,33434,traceroute use
+tcp,34324,big gluck (windows trojan)
+tcp,36865,kastenx pipe
+tcp,40421,master's paradise (windows trojan)
+tcp,40422,master's paradise (windows trojan)
+tcp,40423,master's paradise (windows trojan)
+tcp,40426,master's paradise (windows trojan)
+tcp,40841,cscp
+tcp,42424,asp.net session state
+tcp,43118,reachout
+tcp,43188,reachout
+tcp,44333,kerio winroute firewall administration
+tcp,44334,kerio personal firewall administration
+tcp,44337,kerio mailserver administration
+tcp,44444,prosiak
+tcp,44818,rockwell encapsulation
+tcp,45092,backgate (windows rootkit)
+tcp,45678,eba prise
+tcp,45966,ssrservermgr
+tcp,47262,delta source (windows trojan)
+tcp,47557,databeam corporation
+tcp,47624,direct play server
+tcp,47806,alc protocol
+tcp,47808,building automation and control networks
+tcp,48000,nimbus controller
+tcp,48001,nimbus spooler
+tcp,48002,nimbus hub
+tcp,48003,nimbus gateway
+tcp,49400,compaq insight manager
+tcp,49401,compaq insight manager
+tcp,50300,o&o defrag
+tcp,51515,microsoft operations manager mom-clear
+tcp,52673,stickies
+tcp,54283,subseven
+tcp,54320,orifice 2000 (tcp)
+tcp,54321,orifice 2000 (tcp)
+tcp,60000,deepthroat
+tcp,65000,distributed attack tool / devil (windows trojan)
+tcp,65301,pcanywhere-def
+tcp,65506,"phatbot, agobot, gaobot (windows trojans)"
