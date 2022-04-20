@@ -1,4 +1,7 @@
-# Welcome to NetBox : The Networking Toolbox
+# Welcome to NetBox:
+# The Networking Toolbox
+
+[![License](https://img.shields.io/github/license/illusion173/SE300_Metasploits)](https://img.shields.io/github/license/illusion173/SE300_Metasploits)
 
 ## Developed by ERAU students: Jeremiah Webb, Haskell Cappers, Ryan Lucas & Adam Fitch
 
