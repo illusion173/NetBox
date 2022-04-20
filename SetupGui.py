@@ -9,6 +9,7 @@ from PyQt5.QtWidgets import QWidget, QLabel, QApplication, QHBoxLayout, QPushBut
 from PyQt5 import QtWidgets as qtw
 from PyQt5.QtWidgets import ( QApplication, QWidget, QPushButton, QLabel, QLineEdit, QGridLayout, QMessageBox, QStyle,QDialog)
 import time
+import csv
 #For some odd reason, warnings are good!
 class Window(QMainWindow):
     def __init__(self):
@@ -33,7 +34,6 @@ class Window(QMainWindow):
     
     @pyqtSlot()
     def setupBtn_onClick(self):
-        self.statusBar().showMessage('Importing a Pcap file')
         self.cams = SetupWindow(self.contineLabel.text())
         self.cams.show()
         self.close()
@@ -76,20 +76,6 @@ class SetupWindow(QDialog):
         self.metaBtn = QPushButton('Metasploit', self)
         self.metaBtn.setIconSize
         self.metaBtn.clicked.connect(self.meta_script)
-        
-        self.adminUsernameLabel = QLineEdit()
-        self.adminUsernameLabel.setPlaceholderText('Enter Username')
-        username = self.adminUsernameLabel.text()
-        self.adminCreatBtn = QPushButton('Create', self)
-        self.adminCreatBtn.setIconSize(QSize(200, 200))
-        self.adminCreatBtn.clicked.connect(self.adminCreat)
-        
-        self.passwordLabel = QLineEdit()
-        self.passwordLabel.setPlaceholderText('Enter Password')
-        self.passwordLabel.setEchoMode(QLineEdit.EchoMode.Password)
-        self.passwordBtn = QPushButton('Create', self)
-        self.passwordBtn.setIconSize(QSize(200, 200))
-        self.passwordBtn.clicked.connect(self.passwordCreat)
                 
         layoutV = QVBoxLayout()
         self.pushButton = QPushButton(self)
@@ -107,10 +93,6 @@ class SetupWindow(QDialog):
         layoutH.addWidget(self.pythonLibBtn)
         layoutH.addWidget(self.xsltproc)
         layoutH.addWidget(self.metaBtn)
-        layoutH.addWidget(self.adminUsernameLabel)
-        layoutH.addWidget(self.adminCreatBtn)
-        layoutH.addWidget(self.passwordLabel)
-        layoutH.addWidget(self.passwordBtn)
         layoutV.addLayout(layoutH)
         
         self.nmapBtn.hide()
@@ -120,10 +102,6 @@ class SetupWindow(QDialog):
         self.pythonLibBtn.hide()
         self.xsltproc.hide()
         self.metaBtn.hide()
-        self.adminUsernameLabel.hide()
-        self.adminCreatBtn.hide()
-        self.passwordLabel.hide()
-        self.passwordBtn.hide()
         self.setLayout(layoutV)
         self.show()
         
@@ -133,22 +111,22 @@ class SetupWindow(QDialog):
         self.close()
     
     def update_script(self):
-        #os.command('sudo apt-get update')
+        os.command('sudo apt-get update')
         self.nmapBtn.show()
         self.updateBtn.hide()
         
     def nmap_script(self):
-       # os.command('sudo apt-get install nmap')
+        os.command('sudo apt-get install nmap')
         self.wiressharkBTN.show()
         self.nmapBtn.hide()
         
     def wireshark_script(self):
-       # os.command('sudo apt-get install wireshark')
+        os.command('sudo apt-get install wireshark')
         self.pythonBtn.show()
         self.wiressharkBTN.hide()
         
     def python_script(self):
-       # os.command('sudo apt-get python3')
+        os.command('sudo apt-get python3')
         self.pipBtn.show()
         self.pythonBtn.hide()
         
@@ -158,57 +136,138 @@ class SetupWindow(QDialog):
         self.pipBtn.hide()
         
     def pythonLib_script(self):
-       # os.command('sudo pip3 install readline | pip3 install binascii | pip3 install struct | pip3 install textwrap | pip3 install multiprocessing | pip3 install threading | pip3 install queue | pip3 install subprocess | pip3 install time | pip3 install colorama | pip3 install ipaddress | pip3 install python-nmap | pip3 install ipinfo | pip3 install scapy | pip3 install shodan | pip3 install python-whois | pip3 install paramiko | pip3 install netfilterqueue | pip3 install flask | pip3 install PyQt5 | pip3 install beautifulsoup4 | pip3 install lxml | pip3 install parse-nmap ')
+        os.command('sudo pip3 install readline | pip3 install binascii | pip3 install struct | pip3 install textwrap | pip3 install multiprocessing | pip3 install threading | pip3 install queue | pip3 install subprocess | pip3 install time | pip3 install colorama | pip3 install ipaddress | pip3 install python-nmap | pip3 install ipinfo | pip3 install scapy | pip3 install shodan | pip3 install python-whois | pip3 install paramiko | pip3 install netfilterqueue | pip3 install flask | pip3 install PyQt5 | pip3 install beautifulsoup4 | pip3 install lxml | pip3 install parse-nmap ')
         self.pythonLibBtn.hide()
         self.xsltproc.show()
 
     def xslt_script (self):
-       # os.command('sudo apt-get install xsltproc')
+        os.command('sudo apt-get install xsltproc')
         self.xsltproc.hide()
         self.metaBtn.show()
     
     def meta_script(self):
-       # os.command('cd /tmp | curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall | chmod +x msfinstall | sudo ./msfinstall')
+        os.command('cd /tmp | curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall | chmod +x msfinstall | sudo ./msfinstall')
         self.metaBtn.hide()
-        self.adminUsernameLabel.show()
-        self.adminCreatBtn.show()
-    
+
     def runMetaScript(self):
         print("Running MetaScript")
-        #os.command('msfconsole')
-        #os.command('load msgrpc')
+        os.command('msfconsole')
+        os.command('load msgrpc')
         time.sleep(20)
-        #os.command('sudo msfrpcd -P  -f -n -S -a 127.0.0.1')
-                
-    def adminCreat(self):
-        username = self.adminUsernameLabel.text()
-        if username == '':
-            self.errorMessage()
-            self.adminUsernameLabel.clear()
+        os.command('sudo msfrpcd -P  -f -n -S -a 127.0.0.1')
+        self.CreatenewUser = NewUserMenu()        
+        self.CreatenewUser.show()
+        
+class NewUserMenu(QWidget):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+
+        self.title = 'New User Registration'
+        self.top = 100
+        self.left = 100
+        self.width = 680
+        self.height = 500
+        self.mainScreenUI()
+
+    def mainScreenUI(self):
+        self.setWindowTitle(self.title)
+        self.setGeometry(self.top, self.left, self.width, self.height)
+
+        # Create Admin button
+        adminCreateBtn = QPushButton('Create', self)
+        adminCreateBtn.move(100, 100)
+        adminCreateBtn.clicked.connect(self.CreateAdminBtn_OnClick)
+        self.adminCreateLabel = QLabel('Create a new admin user', self)
+        self.adminCreateLabel.setGeometry(250, 100, 400, 30)
+
+
+    @pyqtSlot()
+    def CreateAdminBtn_OnClick(self):
+        self.cams = AdminWindow()
+        self.cams.show()
+        self.close()
+
+class AdminWindow(QDialog):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle('Creating new Admin User')
+        self.setWindowIcon(self.style().standardIcon(
+            QStyle.SP_FileDialogInfoView))
+        self.setFixedSize(480, 480)
+        #adminLabel = QLabel(value)
+        
+        
+        pageLayout = QGridLayout()
+        # Username Box
+        userName = QLabel('<font size="4"> Username </font>')
+        self.placeHolderUsername = QLineEdit()
+        self.placeHolderUsername.setPlaceholderText('Enter Username')
+        pageLayout.addWidget(userName, 0, 0)
+        pageLayout.addWidget(self.placeHolderUsername, 0, 1)
+
+        # Password Box
+        password = QLabel('<font size="4"> Password </font>')
+        self.placeHolderPassword = QLineEdit()
+        self.placeHolderPassword.setPlaceholderText('Enter password')
+        self.placeHolderPassword.setEchoMode(QLineEdit.EchoMode.Password)
+        pageLayout.addWidget(password, 1, 0)
+        pageLayout.addWidget(self.placeHolderPassword, 1, 1)
+
+        # Login Button
+        self.generalPasswordBtn = QPushButton('Create', self)
+        self.generalPasswordBtn.setIconSize(QSize(200, 200))
+        self.generalPasswordBtn.clicked.connect(self.CreateActualAdminUser)
+        pageLayout.addWidget(self.generalPasswordBtn, 3, 0, 1, 2)
+        pageLayout.setRowMinimumHeight(2, 75)
+        self.setLayout(pageLayout)
+        
+        self.goBackBtn = QPushButton(self)
+        self.goBackBtn.setStyleSheet(
+            'background-color: rgb(0,0,255); color: #fff')
+        self.goBackBtn.setText('Go Back!')
+        self.goBackBtn.clicked.connect(self.GoMainWindow)
+        self.goBackBtn.setGeometry(0,0,480,50)
+
+    def CreateActualAdminUser(self):
+        self.placeHolderUsername.setEchoMode(QLineEdit.EchoMode.Normal)
+        genPassword = self.placeHolderPassword.text()
+        genUsername = self.placeHolderUsername.text()
+
+        if genUsername == '':
+            self.ErrorMessage()
+        elif genPassword == '':
+            self.ErrorMessage()
         else:
-            self.adminUsernameLabel.hide()
-            self.adminCreatBtn.hide()
-            self.passwordLabel.show()
-            self.passwordBtn.show()
+            newUserTableAdmin = [[genUsername, genPassword]]
+            with open("Admin_Users.csv", "a") as csvfile:
+                csvwriter = csv.writer(csvfile)
+                csvwriter.writerows(newUserTableAdmin)
             
-    def passwordCreat(self):
-        self.passwordLabel.setEchoMode(QLineEdit.EchoMode.Normal)
-        password = self.passwordLabel.setText()
-        if password == '':
-            self.errorMessage()
-        else:
-            self.passwordBtn.show()
-        self.passwordLabel.hide()
-        self.passwordLabel.hide()
-    
-    def errorMessage(self):
+            self.CreatedUser()
+
+    def CreatedUser(self):
+        createUser = QMessageBox()
+        createUser.setIcon(QMessageBox.Information)
+        createUser.setWindowTitle('Accepted')
+        createUser.setText(
+            'New user has been created! If you wish to make a new user close window and press the Go Back Button')
+        createUser.setStandardButtons(QMessageBox.Ok)
+        createUser.exec_()
+
+    def ErrorMessage(self):
         username = QMessageBox()
         username.setIcon(QMessageBox.Critical)
         username.setWindowTitle('ERROR')
         username.setText('Please fill in designated area')
         username.setStandardButtons(QMessageBox.Ok)
         username.exec_()
+
+    def GoMainWindow(self):
+        self.cams = NewUserMenu()
+        self.cams.show()
+        self.close()
         
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = Window()

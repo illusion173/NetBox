@@ -3,7 +3,6 @@ from re import S
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 def mainstatScript(userInputFileName):
     with open(userInputFileName, 'r') as JsonFile:
         data = json.load(JsonFile)
@@ -18,7 +17,7 @@ def mainstatScript(userInputFileName):
         absolute = int(pct/100.*np.sum(allvals))
         return "{:.1f}%\n{:d} open".format(pct, absolute)
     def countCurrencies(storage, value):
-        try:
+        try: 
             storage[value] = storage[value] + 1
         except KeyError as e:
             storage[value] = 1
@@ -42,19 +41,21 @@ def mainstatScript(userInputFileName):
         plt.ylabel('Number Amount Open', fontweight='bold', color = 'blue', fontsize='12', horizontalalignment='center')
         plt.suptitle("Ports Open on Network - Bar\n\n")
         plt.savefig('bar.png')
-        #plt.show()
+        
     def piChart():
         for k,v in Occurances.items():
             piLabelKeys.append(k)
             piValues.append(v) 
-        fig, ax = plt.subplots(figsize=(9, 8), subplot_kw=dict(aspect="equal"))
-        wedges, texts, autotexts = ax.pie(piValues, labels=piLabelKeys, autopct=lambda pct: func(pct, piValues),textprops={'fontsize': 11},shadow=True,radius=1)
+        fig, ax = plt.subplots(figsize=(6, 5), subplot_kw=dict(aspect="equal"))
+        wedges, texts, autotexts = ax.pie(piValues, labels= piLabelKeys, autopct=lambda pct: func(pct, piValues),textprops={'fontsize': 11},shadow=True,radius=1)
         plt.setp(autotexts, size=9, weight="bold")
-        ax.set_title("Ports Open on Network - Pie\n\n")
+        ax.set_title("Ports Open on Network - Pie\n")
         plt.axis('equal')
         plt.savefig('pichart.png')
         plt.close()
-        #plt.show()
         
     piChart()
     bar()
+    return amountofComputers
+
+
