@@ -7,28 +7,28 @@
 ## Developed by ERAU students: Jeremiah Webb, Haskell Cappers, Ryan Lucas & Adam Fitch
 [![Build](https://img.shields.io/github/illusion173/SE300_Metasploits/actions/workflows/python-app.yml)](https://github.com/illusion173/SE300_Metasploits/actions)
 
-### Currrently only runs on debian based Linux sytems with the apt package manager & local administrator on computer with sudo privileges.
+### Requirements
+Currrently only runs on debian based Linux sytems with the apt package manager & local administrator on computer with sudo privileges.
+Must have Python 3.10, pip and pip3 installed in order for NetBox to function.
 
+### Description
+NetBox is a standard Networking Toolbox. Currently the tools within it are the following:
+- Wireshark
+- Nmap
+- Nmap to JSON
+- Metasploit Framework
+- Logging in Functionality
 
+Please note do *NOT* use these tools under any circumstance in a network unless you have written consent and permission to use NetBox and its inherent tools.
 
+### Language
+Python 3.10: https://www.python.org/
 
-
-
-
-
-
-
+## Installation
 
 
 
 Run the following command to begin:
-
-```
-git clone https://github.com/illusion173/SE300_Metasploits
-```
-
-
-
 After cloning the repo to your desired directory and navigating to the desired directory, run the following command:
 ```
 sudo python3 SetupGui.py
