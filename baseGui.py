@@ -375,6 +375,7 @@ class Dashboard(QMainWindow):
         helpMenu = QMenu("&Help", self)
         statMenu = QMenu("&Statistics", self)
         CreateUserMenu = QMenu("&Create User", self)
+        disMenu = QMenu("&DISCLAIMER",self)
 
         CreateUserContent = QAction("&Create New User", self)
         CreateUserContent.triggered.connect(self.createNewUserWindow)
@@ -384,13 +385,19 @@ class Dashboard(QMainWindow):
         aboutContent.triggered.connect(self.aboutDis)
         statContent = QAction("&Statistics Page", self)
         statContent.triggered.connect(self.openStatWindow)
+        disContent = QAction("Open",self)
+        disContent.triggered.connect(self.disclamerTab)
+        disMenu.addAction(disContent)
         statMenu.addAction(statContent)
         helpMenu.addAction(helpContent)
         helpMenu.addAction(aboutContent)
         CreateUserMenu.addAction(CreateUserContent)
+        
+       
         menuBar.addMenu(helpMenu)
         menuBar.addMenu(statMenu)
         menuBar.addMenu(CreateUserMenu)
+        menuBar.addMenu(disMenu)
         menuBar.setStyleSheet(
             "font-size: 14px; background-color: #01a4c3; border-style: solid; border-color: #000000; border-width: 3px;")
         helpMenu.setStyleSheet("font-size: 14px; background-color: #01a4c3")
@@ -514,7 +521,7 @@ class generalDashboard(QMainWindow):
         helpMenu.addAction(helpContent)
         helpMenu.addAction(aboutContent)
         self.newMenuBar.addMenu(helpMenu)
-        self.addMenuBar.addMenu(disMenu)
+        self.newMenuBar.addMenu(disMenu)
 
         self.newMenuBar.setStyleSheet(
             "font-size: 14px; background-color: #01a4c3; border-style: solid; border-color: #000000; border-width: 3px;")
