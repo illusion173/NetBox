@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/github/license/illusion173/SE300_Metasploits)](https://img.shields.io/github/license/illusion173/SE300_Metasploits)
 
+[![Issues](https://img.shields.io/github/issues/illusion173/SE300_Metasploits)](https://img.shields.io/github/issues/illusion173/SE300_Metasploits)
 ## Developed by ERAU students: Jeremiah Webb, Haskell Cappers, Ryan Lucas & Adam Fitch
 
 ### Currrently only runs on Linux sytems with the apt package manager & local administrator on computer with sudo privileges.
