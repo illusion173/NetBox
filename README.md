@@ -1,5 +1,4 @@
-# Welcome to NetBox:
-# The Networking Toolbox
+# Welcome to NetBox: Networking Toolbox
 
 [![License](https://img.shields.io/github/license/illusion173/SE300_Metasploits)](https://img.shields.io/github/license/illusion173/SE300_Metasploits)
 
