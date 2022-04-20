@@ -21,6 +21,8 @@ NetBox is a standard Networking Toolbox. Currently the tools within it are the f
 
 Please note do *NOT* use these tools under any circumstance in a network unless you have written consent and permission to use NetBox and its inherent tools.
 
+NetBox is mainly used for scanning computers and servers for potential vulnerabilities. If the user wishses to attempt to exploit potential vulnerabilities in a controlled environment, they can do so in the same GUI.
+
 ### Language
 Python 3.10: https://www.python.org/
 
