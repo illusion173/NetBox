@@ -1,0 +1,23 @@
+sudo pip3 install readline
+pip3 install binascii
+pip3 install struct
+pip3 install textwrap
+pip3 install multiprocessing
+pip3 install threading
+pip3 install queue
+pip3 install subprocess
+pip3 install time
+pip3 install colorama
+pip3 install ipaddress
+pip3 install python-nmap
+pip3 install ipinf
+pip3 install scapy
+pip3 install shodan
+pip3 install python-whois
+pip3 install paramiko
+pip3 install netfilterqueue
+pip3 install flask
+pip3 install PyQt5
+pip3 install beautifulsoup4
+pip3 install lxml
+pip3 install parse-nmap

@@ -62,9 +62,9 @@ class SetupWindow(QDialog):
         self.pythonBtn.clicked.connect(self.python_script)
     
         
-        self.pythonLibBtn = QPushButton('Python Libray', self)
-        self.pythonLibBtn.setIconSize(QSize(200,200))
-        self.pythonLibBtn.clicked.connect(self.pythonLib_script)
+        #self.pythonLibBtn = QPushButton('Python Libray', self)
+        #self.pythonLibBtn.setIconSize(QSize(200,200))
+        #self.pythonLibBtn.clicked.connect(self.pythonLib_script)
         
         self.xsltproc = QPushButton('XSLT', self)
         self.xsltproc.setIconSize(QSize(200,200))
@@ -86,8 +86,8 @@ class SetupWindow(QDialog):
         layoutH.addWidget(self.nmapBtn)
         layoutH.addWidget(self.wiressharkBTN)
         layoutH.addWidget(self.pythonBtn)
-        layoutH.addWidget(self.pipBtn)
-        layoutH.addWidget(self.pythonLibBtn)
+        
+        #layoutH.addWidget(self.pythonLibBtn)
         layoutH.addWidget(self.xsltproc)
         layoutH.addWidget(self.metaBtn)
         layoutV.addLayout(layoutH)
@@ -95,8 +95,8 @@ class SetupWindow(QDialog):
         self.nmapBtn.hide()
         self.wiressharkBTN.hide()
         self.pythonBtn.hide()
-        self.pipBtn.hide()
-        self.pythonLibBtn.hide()
+        
+        #self.pythonLibBtn.hide()
         self.xsltproc.hide()
         self.metaBtn.hide()
         self.setLayout(layoutV)
@@ -124,14 +124,15 @@ class SetupWindow(QDialog):
         
     def python_script(self):
         os.system('sudo apt-get python3')
-        self.pythonLib_script.show()
+        self.xsltproc.show()
+        #self.pythonLib_script.show()
         self.pythonBtn.hide()
         
         
-    def pythonLib_script(self):
-        os.system('sudo pip3 install readline | pip3 install binascii | pip3 install struct | pip3 install textwrap | pip3 install multiprocessing | pip3 install threading | pip3 install queue | pip3 install subprocess | pip3 install time | pip3 install colorama | pip3 install ipaddress | pip3 install python-nmap | pip3 install ipinfo | pip3 install scapy | pip3 install shodan | pip3 install python-whois | pip3 install paramiko | pip3 install netfilterqueue | pip3 install flask | pip3 install PyQt5 | pip3 install beautifulsoup4 | pip3 install lxml | pip3 install parse-nmap ')
-        self.pythonLibBtn.hide()
-        self.xsltproc.show()
+    #def pythonLib_script(self):
+   #    os.system('sudo pip3 install readline | pip3 install binascii | pip3 install struct | pip3 install textwrap | pip3 install multiprocessing | pip3 install threading | pip3 install queue | pip3 install subprocess | pip3 install time | pip3 install colorama | pip3 install ipaddress | pip3 install python-nmap | pip3 install ipinfo | pip3 install scapy | pip3 install shodan | pip3 install python-whois | pip3 install paramiko | pip3 install netfilterqueue | pip3 install flask | pip3 install PyQt5 | pip3 install beautifulsoup4 | pip3 install lxml | pip3 install parse-nmap')
+    #    self.pythonLibBtn.hide()
+        
 
     def xslt_script (self):
         os.system('sudo apt-get install xsltproc')
