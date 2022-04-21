@@ -60,10 +60,7 @@ class SetupWindow(QDialog):
         self.pythonBtn = QPushButton('Python', self)
         self.pythonBtn.setIconSize(QSize(200,200))
         self.pythonBtn.clicked.connect(self.python_script)
-        
-        self.pipBtn = QPushButton('Python3-Pip', self)
-        self.pipBtn.setIconSize(QSize(200,200))
-        self.pipBtn.clicked.connect(self.pip_script)
+    
         
         self.pythonLibBtn = QPushButton('Python Libray', self)
         self.pythonLibBtn.setIconSize(QSize(200,200))
