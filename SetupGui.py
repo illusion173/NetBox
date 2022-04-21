@@ -111,50 +111,46 @@ class SetupWindow(QDialog):
         self.close()
     
     def update_script(self):
-        os.command('sudo apt-get update')
+        os.system('sudo apt-get update')
         self.nmapBtn.show()
         self.updateBtn.hide()
         
     def nmap_script(self):
-        os.command('sudo apt-get install nmap')
+        os.system('sudo apt-get install nmap')
         self.wiressharkBTN.show()
         self.nmapBtn.hide()
         
     def wireshark_script(self):
-        os.command('sudo apt-get install wireshark')
+        os.system('sudo apt-get install wireshark')
         self.pythonBtn.show()
         self.wiressharkBTN.hide()
         
     def python_script(self):
-        os.command('sudo apt-get python3')
-        self.pipBtn.show()
+        os.system('sudo apt-get python3')
+        self.pythonLib_script.show()
         self.pythonBtn.hide()
         
-    def pip_script(self):
-       # os.command()
-        self.xsltproc.show()
-        self.pipBtn.hide()
         
     def pythonLib_script(self):
-        os.command('sudo pip3 install readline | pip3 install binascii | pip3 install struct | pip3 install textwrap | pip3 install multiprocessing | pip3 install threading | pip3 install queue | pip3 install subprocess | pip3 install time | pip3 install colorama | pip3 install ipaddress | pip3 install python-nmap | pip3 install ipinfo | pip3 install scapy | pip3 install shodan | pip3 install python-whois | pip3 install paramiko | pip3 install netfilterqueue | pip3 install flask | pip3 install PyQt5 | pip3 install beautifulsoup4 | pip3 install lxml | pip3 install parse-nmap ')
+        os.system('sudo pip3 install readline | pip3 install binascii | pip3 install struct | pip3 install textwrap | pip3 install multiprocessing | pip3 install threading | pip3 install queue | pip3 install subprocess | pip3 install time | pip3 install colorama | pip3 install ipaddress | pip3 install python-nmap | pip3 install ipinfo | pip3 install scapy | pip3 install shodan | pip3 install python-whois | pip3 install paramiko | pip3 install netfilterqueue | pip3 install flask | pip3 install PyQt5 | pip3 install beautifulsoup4 | pip3 install lxml | pip3 install parse-nmap ')
         self.pythonLibBtn.hide()
         self.xsltproc.show()
 
     def xslt_script (self):
-        os.command('sudo apt-get install xsltproc')
+        os.system('sudo apt-get install xsltproc')
         self.xsltproc.hide()
         self.metaBtn.show()
     
     def meta_script(self):
-        os.command('cd /tmp | curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall | chmod +x msfinstall | sudo ./msfinstall')
+        os.system('cd /tmp | curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall | chmod +x msfinstall | sudo ./msfinstall')
         self.metaBtn.hide()
 
     def runMetaScript(self):
         print("Running MetaScript")
-        os.command('msfconsole')
-        os.command('load msgrpc')
+        os.system('msfconsole')
+        os.system('load msgrpc')
         time.sleep(20)
-        os.command('sudo msfrpcd -P  -f -n -S -a 127.0.0.1')
+        os.system('sudo msfrpcd -P  -f -n -S -a 127.0.0.1')
         self.CreatenewUser = NewUserMenu()        
         self.CreatenewUser.show()
         
