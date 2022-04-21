@@ -21,3 +21,5 @@ pip3 install PyQt5
 pip3 install beautifulsoup4
 pip3 install lxml
 pip3 install parse-nmap
+pip3 install pymetasploit3
+pip3 install matplotlib

@@ -142,15 +142,16 @@ class SetupWindow(QDialog):
     def meta_script(self):
         os.system('cd /tmp | curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall')
         os.system("chmod +x msfinstall")
-        os.system("sudo ./msfinstall")  
+        os.system("sudo ./msfinstall")
+        self.runMetaScript()  
         self.metaBtn.hide()
 
     def runMetaScript(self):
         print("Running MetaScript")
         os.system('msfconsole')
         os.system('load msgrpc')
-        time.sleep(20)
-        os.system('sudo msfrpcd -P  -f -n -S -a 127.0.0.1')
+        print("HEY USER TYPE THIS IS NOW")
+        print('sudo msfrpcd -P -f -n -S -a 127.0.0.1')
         self.CreatenewUser = NewUserMenu()        
         self.CreatenewUser.show()
         
