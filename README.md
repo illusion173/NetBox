@@ -63,4 +63,4 @@ A general user is only allowed to run Nmap scans, and will not be able to view t
 ### Known Issues
 - Due to the constant change of the Metasploit Framework database, this may cause breaking in the exploitation portion and button of NetBox.
 - Ensure that the password you enter in the "sudo msfrpcd -P password -f -n -S -a 127.0.0.1" is the same as the one in singleCompExploit.py is the same. By design it is "password"
-- There is no encryption currently for general and admin users. 
+- There is no encryption currently for general and admin user accounts, passwords and username are clear text. 
