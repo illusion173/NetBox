@@ -38,7 +38,7 @@ sudo apt-get install python3-pip
 sudo pip3 install PyQt5
 sudo python3 SetupGui.py
 When in the msfconsole
-type in: sudo msfrpcd -P -f -n -S -a 127.0.0.1
+type in: sudo msfrpcd -P password -f -n -S -a 127.0.0.1
 sudo ./runPythonPip.sh
 
 ```
