@@ -375,6 +375,7 @@ class Dashboard(QMainWindow):
         helpMenu = QMenu("&Help", self)
         statMenu = QMenu("&Statistics", self)
         CreateUserMenu = QMenu("&Create User", self)
+        disMenu = QMenu("&DISCLAIMER",self)
 
         CreateUserContent = QAction("&Create New User", self)
         CreateUserContent.triggered.connect(self.createNewUserWindow)
@@ -384,13 +385,19 @@ class Dashboard(QMainWindow):
         aboutContent.triggered.connect(self.aboutDis)
         statContent = QAction("&Statistics Page", self)
         statContent.triggered.connect(self.openStatWindow)
+        disContent = QAction("Open",self)
+        disContent.triggered.connect(self.disclamerTab)
+        disMenu.addAction(disContent)
         statMenu.addAction(statContent)
         helpMenu.addAction(helpContent)
         helpMenu.addAction(aboutContent)
         CreateUserMenu.addAction(CreateUserContent)
+        
+       
         menuBar.addMenu(helpMenu)
         menuBar.addMenu(statMenu)
         menuBar.addMenu(CreateUserMenu)
+        menuBar.addMenu(disMenu)
         menuBar.setStyleSheet(
             "font-size: 14px; background-color: #01a4c3; border-style: solid; border-color: #000000; border-width: 3px;")
         helpMenu.setStyleSheet("font-size: 14px; background-color: #01a4c3")
@@ -439,7 +446,14 @@ class Dashboard(QMainWindow):
             "color:white;background:#01a4c3;font-size: 20px;")
         helpBox.about(helpBox, "Help", helpF.read())
         helpF.close()
-
+    
+    def disclamerTab (self):
+        disFile = open("DisclaimerContent.txt", "r")
+        disBox = QMessageBox()
+        disBox.setStyleSheet("color:white;background:#01a4c3;font-size: 20px;")
+        disBox.setWindowIcon(QtGui.QIcon("Logo.png"))
+        disBox.about(disBox,"Disclaimer", disFile.read())
+    
     def aboutDis(self):
         aboutF = open("netBox_About.txt", "r")
         aboutBox = QMessageBox()
@@ -493,16 +507,21 @@ class generalDashboard(QMainWindow):
 
         self.newMenuBar = self.menuBar()
         helpMenu = QMenu("&Help", self)
+        disMenu = QMenu("&DISCLAIMER",self)
 
         # statOpen.triggered(self.sub_window.show)
         helpContent = QAction("&Help_Content", self)
         helpContent.triggered.connect(self.helpDis)
         aboutContent = QAction("&About", self)
         aboutContent.triggered.connect(self.aboutDis)
+        disContent = QAction("Open",self)
+        disContent.triggered.connect(self.disclamerTab)
+        disMenu.addAction(disContent)
 
         helpMenu.addAction(helpContent)
         helpMenu.addAction(aboutContent)
         self.newMenuBar.addMenu(helpMenu)
+        self.newMenuBar.addMenu(disMenu)
 
         self.newMenuBar.setStyleSheet(
             "font-size: 14px; background-color: #01a4c3; border-style: solid; border-color: #000000; border-width: 3px;")
@@ -562,6 +581,7 @@ class LoginSystem(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle('NetBox Login')
+        self.setWindowIcon(QtGui.QIcon("Logo.png"))
         self.resize(480, 100)
         pageLayout = QGridLayout()
         # Username Box
@@ -633,6 +653,7 @@ class LoginSystem(QWidget):
         if self.combobox.currentText() == "Administrator":
             adminInfo = []
             msg = QMessageBox()
+            msg.setWindowIcon(QtGui.QIcon("Logo.png"))
         # Read File
             with open("Admin_Users.csv") as csvfile:
                 reader = csv.reader(csvfile)
@@ -674,6 +695,7 @@ class LoginSystem(QWidget):
             # print("Normal Access")
             normInfo = []
             msg = QMessageBox()
+            msg.setWindowIcon(QtGui.QIcon("Logo.png"))
             # Read File
             with open("Normal_Users.csv") as csvfile:
                 reader = csv.reader(csvfile)
