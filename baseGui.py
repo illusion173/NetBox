@@ -581,7 +581,7 @@ class LoginSystem(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle('NetBox Login')
-        self.setWindowIcon(QtGui.QIcon("Logo.png"))
+        #self.setWindowIcon(QtGui.QIcon("Logo.png"))
         self.resize(480, 100)
         pageLayout = QGridLayout()
         # Username Box
@@ -653,7 +653,7 @@ class LoginSystem(QWidget):
         if self.combobox.currentText() == "Administrator":
             adminInfo = []
             msg = QMessageBox()
-            msg.setWindowIcon(QtGui.QIcon("Logo.png"))
+            #msg.setWindowIcon(QtGui.QIcon("Logo.png"))
         # Read File
             with open("Admin_Users.csv") as csvfile:
                 reader = csv.reader(csvfile)
@@ -695,7 +695,7 @@ class LoginSystem(QWidget):
             # print("Normal Access")
             normInfo = []
             msg = QMessageBox()
-            msg.setWindowIcon(QtGui.QIcon("Logo.png"))
+            #msg.setWindowIcon(QtGui.QIcon("Logo.png"))
             # Read File
             with open("Normal_Users.csv") as csvfile:
                 reader = csv.reader(csvfile)
