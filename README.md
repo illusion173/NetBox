@@ -31,9 +31,16 @@ Python 3.10: https://www.python.org/
 
 
 Run the following command to begin:
-After cloning the repo to your desired directory and navigating to the desired directory, run the following command:
+After cloning the repo to your desired directory and navigating to the desired directory, run the following commands:
 ```
+sudo apt-get install python3
+sudo apt-get install python3-pip
+sudo pip3 install PyQt5
 sudo python3 SetupGui.py
+When in the msfconsole
+type in: sudo msfrpcd -P -f -n -S -a 127.0.0.1
+sudo ./runPythonPip.sh
+
 ```
 
 After accepting all the needed software to be installed, the GUI will ask for a username and password.
