@@ -140,7 +140,9 @@ class SetupWindow(QDialog):
         self.metaBtn.show()
     
     def meta_script(self):
-        os.system('cd /tmp | curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall | chmod +x msfinstall | sudo ./msfinstall')
+        os.system('cd /tmp | curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall')
+        os.system("chmod +x msfinstall")
+        os.system("sudo ./msfinstall")  
         self.metaBtn.hide()
 
     def runMetaScript(self):
