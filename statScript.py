@@ -58,4 +58,3 @@ def mainstatScript(userInputFileName):
     bar()
     return amountofComputers
 
-mainstatScript("NetworkVerboseTest.json")
