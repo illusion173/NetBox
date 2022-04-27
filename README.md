@@ -1,7 +1,7 @@
 # Welcome to NetBox: Networking Toolbox
 
 [![License](https://img.shields.io/github/license/illusion173/SE300_Metasploits)](https://github.com/illusion173/SE300_Metasploits/blob/main/LICENSE)
-[![Version](https://img.shields.io/badge/Version-B1.0-success)](https://github.com/illusion173/SE300_Metasploits)
+[![Version](https://img.shields.io/badge/Version-1.0-success)](https://github.com/illusion173/SE300_Metasploits)
 [![Issues](https://img.shields.io/github/issues/illusion173/SE300_Metasploits)](https://github.com/illusion173/SE300_Metasploits/issues)
 [![Python](https://img.shields.io/badge/Python-3.10-brightgreen)](https://www.python.org/)
 ## Developed by ERAU students: Jeremiah Webb, Haskell Cappers, Ryan Lucas & Adam Fitch
