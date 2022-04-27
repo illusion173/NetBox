@@ -35,6 +35,7 @@ After cloning the repo to your desired directory and navigating to the desired d
 ```
 sudo apt-get install python3
 sudo apt-get install python3-pip
+sudo ./runPythonPip.sh
 sudo pip3 install PyQt5
 sudo python3 SetupGui.py
 When in the msfconsole
@@ -42,8 +43,6 @@ tyoe in: load msgrpc [PASS=password]
 type in: sudo msfrpcd -P password -f -n -S -a 127.0.0.1
 In singleCompExploit.py, go to line "client=MsfRpcClient('ENTERPASSWORDHERE',server="127.0.0.1",port=55553,ssl=False)"
 Enter the password that was given by the metasploit Framework.
-sudo ./runPythonPip.sh
-
 ```
 
 After accepting all the needed software to be installed, the GUI will ask for a username and password.
